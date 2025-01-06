@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 drop-shadow-xl hover:drop-shadow-xl flex justify-between items-center text-white h-20 px-4">
+    <div className="bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500 drop-shadow-xl hover:drop-shadow-xl flex justify-between items-center text-white h-20 px-4">
       {/* Logo */}
       <Link to={"/"}>
         <div className="text-2xl ml-10 font-bold">
@@ -20,13 +20,13 @@ const Navbar = () => {
 
       {/* Desktop Menu (visible on large screens) */}
       <div className="hidden mr-10 lg:flex">
-        <ul className="flex text-white font-semibold gap-8">
+        <ul className="flex text-white font-serif font-semibold gap-8">
           <Link to={"/"}>
             <li className="hover:text-gray-300">Home</li>
           </Link>
-          {/* <Link to={"/#services"}>
-            <li className="hover:text-gray-300">About</li>
-          </Link> */}
+          <a href="/#services">
+            <li className="hover:text-gray-300">Services</li>
+          </a>
 
           {/* <li className="hover:text-gray-300">Contact</li> */}
         </ul>
@@ -55,12 +55,15 @@ const Navbar = () => {
       {/* Mobile Menu (visible when isMenuOpen is true) */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-20 left-0 w-full bg-gradient-to-r from-blue-500 via-blue-50 to-blue-500 text-black p-4">
-          <ul className="flex flex-col gap-4 text-center">
+          <ul className="flex flex-col gap-4 text-neutral-900 text-center">
             <Link to={"/"}>
               <li className="hover:text-gray-300">Home</li>
             </Link>
-            <li className="hover:text-gray-300">About</li>
-            <li className="hover:text-gray-300">Contact</li>
+            <a href="/#services">
+              <li className="hover:text-gray-300">Services</li>
+            </a>
+
+            {/* <li className="hover:text-gray-300">Contact</li> */}
           </ul>
         </div>
       )}

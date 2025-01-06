@@ -3,12 +3,12 @@ import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/new.jpeg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-between px-6">
+    <div className="bg-[url('/homebg.jpg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-between px-6">
       {/* Image Section */}
       <div className="w-full lg:w-1/2 lg:mb-0 relative z-10">
         <div>
           <img
-            src="/mini.png"
+            src="/HomeBP.png"
             alt="Handyman Services"
             className="w-full h-auto object-cover md:h-[500px] md:w-auto"
           />
@@ -17,7 +17,7 @@ const HeroSection = () => {
 
       {/* Text Section */}
       <div className="text-center lg:text-left lg:w-1/2">
-        <h1 className="text-4xl sm:text-sm md:text-4xl lg:text-5xl font-bold text-black">
+        <h1 className="text-4xl sm:text-sm md:text-4xl lg:text-5xl font-bold font-serif text-black">
           Maintenance
           <span className="hero-text text-4xl sm:text-lg md:text-4xl lg:text-5xl font-bold">
             {" "}
@@ -32,7 +32,7 @@ const HeroSection = () => {
             <span className="strokeme">s</span>
           </span>
         </h1>
-        <div className="mt-6 md:mr-[380px]">
+        <div className="mt-6 lg:mr-[380px]">
           <Button name="Call Now" />
         </div>
       </div>
