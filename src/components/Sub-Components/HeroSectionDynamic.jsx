@@ -1,7 +1,5 @@
-// src/components/sub-components/HeroSectionDynamic.jsx
-import React from "react";
-// import Button from "./Button"; // Assuming you have a Button component
 import Button from "../Button";
+
 const HeroSectionDynamic = ({
   title,
   subtitle,
@@ -27,13 +25,13 @@ const HeroSectionDynamic = ({
 
       {/* Text Section */}
       <div className="text-center lg:text-left lg:w-1/2">
-        <h1 className="text-4xl sm:text-lg md:text-4xl lg:text-5xl font-bold text-black">
+        <h2 className="text-4xl sm:text-sm md:text-4xl lg:text-5xl font-serif font-bold text-black">
           {title} {/* Dynamic Title */}
-          <span className="text-blue-500 text-4xl sm:text-lg md:text-4xl lg:text-5xl font-bold">
+          <span className="text-blue-500 text-4xl sm:text-sm md:text-4xl lg:text-5xl font-bold">
             {subtitle} {/* Dynamic Subtitle */}
           </span>
-        </h1>
-        <div className="mt-6 flex justify-center md:ml-[150px] md:justify-start">
+        </h2>
+        <div className="mt-6 lg:mr-[380px]">
           <Button name={buttonText} />
         </div>
       </div>

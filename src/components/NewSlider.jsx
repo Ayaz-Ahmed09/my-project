@@ -10,6 +10,8 @@ const services = [
   " Carpentry Service",
   " Painting Service",
   " Pool Maintenance Service",
+  " Pest Control Service",
+  " Home Appliance Service",
 ];
 
 const NewSlider = () => {
@@ -41,16 +43,14 @@ const NewSlider = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 text-white mt-6 mb-6">
+    <div className="w-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 text-white mt-4 mb-6">
       <Slider {...settings}>
         {services.map((service, index) => (
           <div
             key={index}
-            className="px-4 py-2 whitespace-nowrap text-center h-[70px]"
+            className="px-4 py-2 whitespace-nowrap text-center h-[50px]"
           >
-            <div className="font-semibold text-2xl font-serif mt-[12px]">
-              {service}
-            </div>
+            <div className="font-semibold text-2xl font-serif  ">{service}</div>
           </div>
         ))}
       </Slider>

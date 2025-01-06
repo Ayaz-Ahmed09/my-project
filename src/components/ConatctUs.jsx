@@ -1,6 +1,10 @@
-// ContactUs.jsx
 import { useState } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaCommentDots,
+} from "react-icons/fa";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -54,52 +58,60 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-12">
+    <div className="container mx-auto  px-6 py-12">
       <div className="flex flex-col md:flex-row justify-center items-start gap-12">
         {/* Left Side with three contact cards */}
-        <div className="w-full md:mt-24  md:w-1/3 space-y-6">
+        <div className="w-full md:mt-6   md:w-1/3 space-y-6">
+          {/* Company Name Card */}
+          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <FaCommentDots className="text-blue-500 text-3xl" />
+            <div className="font-serif">
+              <h3 className="font-bold text-lg">Contact Us Now</h3>
+              <p className="text-gray-600">
+                Our staff would love to hear from you
+              </p>
+            </div>
+          </div>
           {/* Company Address Card */}
           <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
             <FaMapMarkerAlt className="text-blue-500 text-3xl" />
-            <div>
+            <div className="font-serif">
               <h3 className="font-bold text-lg">Company Address</h3>
-              <p className="text-gray-600">1234 Main Street, Dubai, UAE</p>
+              <p className="text-gray-600">
+                WHP2-Block-A Commercial, Dubai, UAE
+              </p>
             </div>
           </div>
 
           {/* Call Now Card */}
           <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
             <FaPhoneAlt className="text-blue-500 text-3xl" />
-            <div>
+            <div className="font-serif">
               <h3 className="font-bold text-lg">Call Us Now</h3>
-              <p className="text-gray-600">+971 50 123 4567</p>
+              <p className="text-gray-600">+971-569096124</p>
             </div>
           </div>
-          {/* onemore */}
-          {/* <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
-            <FaPhoneAlt className="text-blue-500 text-3xl" />
-            <div>
-              <h3 className="font-bold text-lg">Call Us Now</h3>
-              <p className="text-gray-600">+971 50 123 4567</p>
-            </div>
-          </div> */}
-
           {/* Email Card */}
           <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
             <FaEnvelope className="text-blue-500 text-3xl" />
-            <div>
+            <div className="font-serif">
               <h3 className="font-bold text-lg">Email Us</h3>
-              <p className="text-gray-600">contact@supreme.com</p>
+              <p className="text-gray-600">thesuprememaintenance@gmail.com</p>
             </div>
           </div>
         </div>
 
         {/* Contact Form Section */}
         <div className="w-full md:w-2/3 bg-white p-6 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
-          <form onSubmit={handleSubmit}>
+          <h2 className="text-3xl font-bold font-serif text-center mb-6">
+            Contact Us
+          </h2>
+          <form onSubmit={handleSubmit} autoComplete="">
             <div className="mb-4">
-              <label htmlFor="name" className="block text-lg font-medium">
+              <label
+                htmlFor="name"
+                className="block font-serif text-lg font-medium"
+              >
                 Name
               </label>
               <input
@@ -115,7 +127,10 @@ const ContactUs = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block text-lg font-medium">
+              <label
+                htmlFor="email"
+                className="block font-serif text-lg font-medium"
+              >
                 Email
               </label>
               <input
@@ -131,7 +146,10 @@ const ContactUs = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="message" className="block text-lg font-medium">
+              <label
+                htmlFor="message"
+                className="block text-lg font-serif font-medium"
+              >
                 Message
               </label>
               <textarea
