@@ -63,7 +63,7 @@ const ContactUs = () => {
         {/* Left Side with three contact cards */}
         <div className="w-full md:mt-6   md:w-1/3 space-y-6">
           {/* Company Name Card */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+          <div className="bg-white p-6 rounded-lg hover:border-2 border-blue-500 shadow-lg flex items-center gap-4">
             <FaCommentDots className="text-blue-500 text-3xl" />
             <div className="font-serif">
               <h3 className="font-bold text-lg">Contact Us Now</h3>
@@ -73,7 +73,7 @@ const ContactUs = () => {
             </div>
           </div>
           {/* Company Address Card */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:border-2 border-blue-500 flex items-center gap-4">
             <FaMapMarkerAlt className="text-blue-500 text-3xl" />
             <div className="font-serif">
               <h3 className="font-bold text-lg">Company Address</h3>
@@ -84,7 +84,7 @@ const ContactUs = () => {
           </div>
 
           {/* Call Now Card */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:border-2 border-blue-500 flex items-center gap-4">
             <FaPhoneAlt className="text-blue-500 text-3xl" />
             <div className="font-serif">
               <h3 className="font-bold text-lg">Call Us Now</h3>
@@ -92,7 +92,7 @@ const ContactUs = () => {
             </div>
           </div>
           {/* Email Card */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:border-2 border-blue-500 flex items-center gap-4">
             <FaEnvelope className="text-blue-500 text-3xl" />
             <div className="font-serif">
               <h3 className="font-bold text-lg">Email Us</h3>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-sky-500 text-white py-4">
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col font-bold font-serif md:flex-row text-sm space-y-2 md:space-y-0 md:space-x-6 text-gray-100">
+        {/* <div className="flex flex-col font-bold font-serif md:flex-row text-sm space-y-2 md:space-y-0 md:space-x-6 text-gray-100">
           <Link
             to="/"
             className="hover:text-indigo-300 transition duration-300"
@@ -32,10 +32,10 @@ const Footer = () => {
           {/* <a href="#" className="hover:text-indigo-300 transition duration-300">
             Contact
           </a> */}
-          {/* <a href="#" className="hover:text-indigo-300 transition duration-300">
+        {/* <a href="#" className="hover:text-indigo-300 transition duration-300">
             About
           </a> */}
-        </div>
+        {/* </div>  */}
 
         {/* Copyright */}
         <div className="text-sm text-gray-100 mt-4 md:mt-0">

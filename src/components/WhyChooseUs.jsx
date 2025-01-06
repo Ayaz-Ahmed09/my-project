@@ -20,9 +20,9 @@ const WhyChooseUs = () => {
         </p>
 
         {/* List of Points */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Expert Technicians */}
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg">
+          <div className="flex flex-col items-center hover:border-2 border-blue-500 text-center p-6 bg-white rounded-lg shadow-lg">
             <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full mb-4">
               <FaTools className="w-6 h-6" />
             </div>
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Trustworthy & Reliable */}
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg">
+          <div className="flex flex-col items-center hover:border-2 border-blue-500 text-center p-6 bg-white rounded-lg shadow-lg">
             <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full mb-4">
               <FaShieldAlt className="w-6 h-6" />
             </div>
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* On-Time Service */}
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg">
+          <div className="flex flex-col items-center text-center hover:border-2 border-blue-500 p-6 bg-white rounded-lg shadow-lg">
             <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full mb-4">
               <FaRegClock className="w-6 h-6" />
             </div>
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* 24/7 Service */}
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg">
+          <div className="flex flex-col items-center text-center hover:border-2 border-blue-500 p-6 bg-white rounded-lg shadow-lg">
             <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full mb-4">
               <FaPhoneAlt className="w-6 h-6" />
             </div>

@@ -20,12 +20,17 @@ import Washingmechine from "./pages/washing-mechine";
 import FridgeRepair from "./pages/fridge-repair";
 import VillaPainting from "./pages/villa-painting";
 import HousePainting from "./pages/house-painting";
+import About from "./pages/about";
+import ContactPage from "./pages/contact";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactPage />} />
+
         <Route path="/handyman-services" element={<HandymanService />} />
         <Route path="/plumbing-service" element={<PlumbingService />} />
         <Route
