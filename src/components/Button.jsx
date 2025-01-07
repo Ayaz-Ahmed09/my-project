@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 const Button = ({ name }) => {
   const [pulse, setPulse] = useState(false);
 
@@ -13,7 +12,7 @@ const Button = ({ name }) => {
   }, []);
 
   const handleCall = () => {
-    window.location.href = `tel:${+971569096124}`;
+    window.location.href = "tel:+971569096124";
   };
 
   return (

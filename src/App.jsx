@@ -44,7 +44,7 @@ function App() {
       </h2>
       <Services />
       <h2 className="text-center text-3xl font-bold font-serif text-blue-500 mt-6">
-        Our Testimonials
+        Our Client Testimonials
       </h2>
       <Testimonial />
       <WhyChooseUs />

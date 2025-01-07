@@ -8,7 +8,8 @@ const Footer = () => {
           <img
             src="/logo1.png"
             alt="supreme logo"
-            className="h-12 w-12 mr-3 transition-transform transform hover:scale-110 duration-300"
+            loading="eager"
+            className="h-11 w-11 mr-3 transition-transform transform hover:scale-110 duration-300"
           />
           <h2 className="text-xl font-bold text-slate-100">
             The Supreme Maintenance

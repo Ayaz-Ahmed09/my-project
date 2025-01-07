@@ -14,7 +14,13 @@ const Navbar = () => {
       {/* Logo */}
       <Link to={"/"}>
         <div className="text-2xl ml-10 font-bold">
-          <img src="/logo1.png" alt="supreme logo" height={80} width={80} />
+          <img
+            src="/logo1.png"
+            alt="supreme logo"
+            height={80}
+            width={80}
+            loading="eager"
+          />
         </div>
       </Link>
 
@@ -25,7 +31,7 @@ const Navbar = () => {
             <li className="hover:text-gray-300">Home</li>
           </Link>
           <Link to={"/about"}>About Us</Link>
-          <Link to={"/contact"}>Contact</Link>
+          <Link to={"/contact"}>Contact Us</Link>
 
           {/* <a href="/#services">
             <li className="hover:text-gray-300">Services</li>
@@ -58,13 +64,12 @@ const Navbar = () => {
       {/* Mobile Menu (visible when isMenuOpen is true) */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-20 left-0 w-full bg-gradient-to-r from-blue-500 via-blue-50 to-blue-500 text-black p-4">
-          <ul className="flex flex-col gap-4 text-neutral-900 text-center">
+          <ul className="flex flex-col gap-4 font-bold text-neutral-500 text-center">
             <Link to={"/"}>
               <li className="hover:text-gray-300">Home</li>
             </Link>
-            <a href="/#services">
-              <li className="hover:text-gray-300">Services</li>
-            </a>
+            <Link to={"/about"}>About Us</Link>
+            <Link to={"/contact"}>Contact Us</Link>
 
             {/* <li className="hover:text-gray-300">Contact</li> */}
           </ul>

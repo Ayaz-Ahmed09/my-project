@@ -10,14 +10,14 @@ import RenovationService from "./pages/renovation-services";
 import ElectricalService from "./pages/electrical-services";
 import CarpentryService from "./pages/carpentry-service";
 import PaintingService from "./pages/painting-service";
-import PoolMaintenance from "./pages/pool-maintenance";
+// import PoolMaintenance from "./pages/pool-maintenance";
 import PestControl from "./pages/pest-control";
 import Footer from "./components/Footer";
 import HomeAppliance from "./pages/home-appliance";
 import Dishwasher from "./pages/dishwasher-reparing";
 import WaterHeater from "./pages/water-heater";
-import Washingmechine from "./pages/washing-mechine";
-import FridgeRepair from "./pages/fridge-repair";
+import Washingmechine from "./pages/washing-machine";
+import FridgeRepair from "./pages/refrigerator-repair";
 import VillaPainting from "./pages/villa-painting";
 import HousePainting from "./pages/house-painting";
 import About from "./pages/about";
@@ -32,7 +32,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<ContactPage />} />
 
         <Route path="/handyman-services" element={<HandymanService />} />
-        <Route path="/plumbing-service" element={<PlumbingService />} />
+        <Route path="/plumbing-services" element={<PlumbingService />} />
         <Route
           path="/plumbing-services/water-heater"
           element={<WaterHeater />}
@@ -49,7 +49,7 @@ createRoot(document.getElementById("root")).render(
           path="/painting-service/house-painting"
           element={<HousePainting />}
         />
-        <Route path="/pool-maintenance" element={<PoolMaintenance />} />
+        {/* <Route path="/pool-maintenance" element={<PoolMaintenance />} /> */}
         <Route path="/pest-control" element={<PestControl />} />
         {/* Nested Route for HomeAppliance */}
         {/* HomeAppliance Route: List of Services */}
@@ -60,11 +60,11 @@ createRoot(document.getElementById("root")).render(
         />
 
         <Route
-          path="/home-appliance/washing-mechine"
+          path="/home-appliance/washing-machine"
           element={<Washingmechine />}
         />
         <Route
-          path="/home-appliance/fridge-repair"
+          path="/home-appliance/refrigerator-repair"
           element={<FridgeRepair />}
         />
       </Routes>

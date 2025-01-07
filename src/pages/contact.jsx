@@ -1,12 +1,14 @@
-import React from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
   FaWhatsapp,
 } from "react-icons/fa";
-
+import { useEffect } from "react";
 const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container mx-auto px-6 py-12">
       <h2 className="text-4xl font-semibold font-serif text-center text-blue-600 mb-8">
@@ -14,9 +16,9 @@ const ContactPage = () => {
       </h2>
 
       <p className="text-lg text-gray-600 mb-8 text-center">
-        We're here to assist you! Reach out to us through any of the methods
-        below. Whether you prefer calling, emailing, or using WhatsApp, we're
-        always happy to help.
+        We&apos;re here to assist you! Reach out to us through any of the
+        methods below. Whether you prefer calling, emailing, or using WhatsApp,
+        we&apos;re always happy to help.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -95,10 +97,10 @@ const ContactPage = () => {
           How Can We Help?
         </h3>
         <p className="text-lg text-gray-600 text-center mb-8">
-          Whether you're looking for more information about our services, need
-          an emergency repair, or simply want to ask a question, we're always
-          here to help. Just contact us through one of the methods above, and
-          we'll be happy to assist you as quickly as possible.
+          Whether you&apos;re looking for more information about our services,
+          need an emergency repair, or simply want to ask a question, we&apos;re
+          always here to help. Just contact us through one of the methods above,
+          and we&apos;ll be happy to assist you as quickly as possible.
         </p>
 
         <div className="text-center">

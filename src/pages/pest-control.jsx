@@ -4,34 +4,38 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const PestControl = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const PestService = [
     {
       title: "Bed Pest Control",
       description:
         "Effective treatment to eliminate bed bugs and prevent future infestations.",
-      image: "/mos.jpeg",
+      image: "/bed.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Mosquito Control",
       description:
         "Professional mosquito control to keep your environment safe and bite-free.",
-      image: "/bed.jpeg",
+      image: "/mos.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Indoor Pest Control",
       description:
         "Comprehensive pest control for a pest-free indoor environment.",
-      image: "/outdoor.jpeg",
+      image: "/indoor.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Outdoor Pest Control",
       description:
         "Protect your outdoor spaces with effective pest management solutions.",
-      image: "/outdoor2.jpeg",
+      image: "/outdoor.jpg",
       callNowLink: "+971569096124",
     },
   ];
@@ -61,27 +65,27 @@ const PestControl = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us ",
+    heading: "Why Choose Us For Pest Control Services ",
     subheading:
       "Choose us for your pest control needs in Dubai and experience a level of service that goes beyond simply eliminating pests. We prioritize your safety and well-being, utilizing safe and effective methods, including eco-friendly and non-toxic options, to ensure the protection of your family and pets.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -92,7 +96,7 @@ const PestControl = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/pestH.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Best Pest Control Services Near You In Dubai"

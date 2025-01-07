@@ -18,13 +18,14 @@ const HeroSectionDynamic = ({
           <img
             src={image}
             alt="Hero Section"
+            loading="eager"
             className="w-full h-auto object-cover md:h-[500px] md:w-auto"
           />
         </div>
       </div>
 
       {/* Text Section */}
-      <div className="text-center lg:text-left lg:w-1/2">
+      <div className="text-center lg:text-left lg:w-1/2 mt-8 lg:mt-0">
         <h2 className="text-4xl sm:text-sm md:text-4xl lg:text-5xl font-serif font-bold text-black">
           {title} {/* Dynamic Title */}
           <span className="text-blue-500 text-4xl sm:text-sm md:text-4xl lg:text-5xl font-bold">

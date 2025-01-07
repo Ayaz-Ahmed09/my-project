@@ -1,13 +1,16 @@
 import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic";
-
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HeroSectionDynamic
         title="About"
         subtitle="Supreme Maintenance"
         backgroundImage="/homebg.jpg"
-        image="/hand.png"
+        image="/About.png"
         buttonText="Call Now"
       />
       <section className="bg-gray-100 pt-6 ">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const Cards = ({ title, description, viewDetailLink, image, callNowLink }) => {
   const handleCallNow = () => {
     window.location.href = `tel:${callNowLink}`;
@@ -11,6 +12,7 @@ const Cards = ({ title, description, viewDetailLink, image, callNowLink }) => {
       <img
         src={image}
         alt={title}
+        loading="eager"
         className="w-full h-auto object-cover rounded-lg mb-4 lg:mb-0 lg:w-1/3 lg:mr-6"
       />
 

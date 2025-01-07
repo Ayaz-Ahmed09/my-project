@@ -3,13 +3,14 @@ import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/homebg.jpg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-between px-6">
+    <div className="bg-[url('/front.jpg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-between px-6">
       {/* Image Section */}
       <div className="w-full lg:w-1/2 lg:mb-0 relative z-10">
         <div>
           <img
             src="/HomeBP.png"
             alt="Handyman Services"
+            loading="eager"
             className="w-full h-auto object-cover md:h-[500px] md:w-auto"
           />
         </div>

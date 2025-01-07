@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
         </h2>
 
         {/* Subheading */}
-        <p className="mt-4 text-xl text-gray-600">
+        <p className="mt-2 p-6 sm:text-lg font-sans md:text-lg lg:text-2xl text-gray-600">
           Supreme Maintenance offers a wide range of house and building
           maintenance services in Dubai. Our team of skilled technicians is
           committed to providing exceptional service, from minor repairs to
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
         </p>
 
         {/* List of Points */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-6 grid grid-cols-1 p-6 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Expert Technicians */}
           <div className="flex flex-col items-center hover:border-2 border-blue-500 text-center p-6 bg-white rounded-lg shadow-lg">
             <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full mb-4">
@@ -29,10 +29,10 @@ const WhyChooseUs = () => {
             <h3 className="text-xl font-semibold font-serif text-gray-900">
               Expert Technicians
             </h3>
-            <p className="text-gray-500 mt-2">
+            {/* <p className="text-gray-500 mt-2">
               Our handymen are highly skilled and experienced in various home
               repair tasks, ensuring top-quality work every time.
-            </p>
+            </p> */}
           </div>
 
           {/* Trustworthy & Reliable */}
@@ -43,10 +43,10 @@ const WhyChooseUs = () => {
             <h3 className="text-xl font-semibold font-serif text-gray-900">
               Trustworthy & Reliable
             </h3>
-            <p className="text-gray-500 mt-2">
+            {/* <p className="text-gray-500 mt-2">
               We prioritize customer trust, ensuring our team is
               background-checked and fully insured for your peace of mind.
-            </p>
+            </p> */}
           </div>
 
           {/* On-Time Service */}
@@ -57,10 +57,10 @@ const WhyChooseUs = () => {
             <h3 className="text-xl font-semibold font-serif text-gray-900">
               On-Time Service
             </h3>
-            <p className="text-gray-500 mt-2">
+            {/* <p className="text-gray-500 mt-2">
               We respect your time. Our team always arrives on time and
               completes the job efficiently within the agreed timeframe.
-            </p>
+            </p> */}
           </div>
 
           {/* 24/7 Service */}
@@ -71,11 +71,11 @@ const WhyChooseUs = () => {
             <h3 className="text-xl font-semibold font-serif text-gray-900">
               24/7 Service
             </h3>
-            <p className="text-gray-500 mt-2">
+            {/* <p className="text-gray-500 mt-2">
               We offer round-the-clock services, so you can count on us
               anytime—day or night, we&apos;re always available for emergency
               repairs.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const CarpentryService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const CarpenterService = [
     {
       title: "Furniture Assembly",
@@ -130,20 +134,20 @@ const CarpentryService = () => {
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -152,23 +156,25 @@ const CarpentryService = () => {
       <HeroSectionDynamic
         title="Carpenter At Your"
         subtitle="Services"
-        backgroundImage="/ne Professional Carpenter Services Near You In Dubaiw.jpeg"
+        backgroundImage="/new.jpeg"
         image="/ch.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title=" Professional Carpenter Services Near You In Dubai"
-        text="Searching for a skilled carpenter near you in Dubai? Look no further than Fix It Fast Maintenance. We are your trusted local experts for all your carpentry needs. Whether you're looking to add a touch of elegance with custom-built furniture, need to repair or install kitchen cabinets, require expert wardrobe installation or repair services, or desire the warmth and beauty of wood flooring, we have you covered.
+        text="Searching for a skilled carpenter near you in Dubai? Look no further than Supreme Maintenance. We are your trusted local experts for all your carpentry needs. Whether you're looking to add a touch of elegance with custom-built furniture, need to repair or install kitchen cabinets, require expert wardrobe installation or repair services, or desire the warmth and beauty of wood flooring, we have you covered.
 Professional Carpentry Service In Dubai
-10 years Experience
-Licensed Company
-Certified Furniture assembly experts
-Free Estimation
-Quality Work Guaranteed
 
 Our team of experienced carpenters possesses the skills and expertise to handle a wide range of carpentry projects, from simple repairs and installations to complex custom designs.
 
 Contact us today to schedule a consultation and let us help you bring your carpentry visions to life."
+        points={[
+          "10 years Experience",
+          "Licensed Company",
+          "Certified Furniture assembly experts",
+          "Free Estimation",
+          "Quality Work Guaranteed",
+        ]}
         imageSrc="/ch2.png"
         imageAlt="Image of man having all tools in hand"
       />
@@ -189,7 +195,7 @@ Contact us today to schedule a consultation and let us help you bring your carpe
         </div>
       </div>
       <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
-        Our Testimonials
+        Our Client Testimonials
       </h2>
       <TestimonialDynamic testimonialData={CarTestimonials} />
       <div>

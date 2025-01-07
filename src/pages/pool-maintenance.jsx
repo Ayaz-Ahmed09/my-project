@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const PoolMaintenance = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const PoolService = [
     {
       title: "Regular Cleaning",
@@ -65,7 +69,7 @@ const PoolMaintenance = () => {
     {
       title: "Brushing",
       description:
-        "To prevent algae buildup and maintain a smooth pool surface, hire our experts to maintain a pristine pool. Book now!",
+        "To prevent algae buildup and maintain a smooth pool surface, hire our experts to maintain a pristine pool. Call Now!",
       image: "/burshing.jpeg",
       callNowLink: "+971569096124",
     },
@@ -116,27 +120,27 @@ const PoolMaintenance = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us For Interior & Exterior Painting Service",
+    heading: "Why Choose Us ",
     subheading:
       "At Supreme Maintenance, we understand that every painting project is unique. That’s why we offer a wide range of professional interior and exterior painting services for houses, villas, and offices to meet all your needs. Our team of skilled painters is committed to delivering top-notch painting solutions.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -147,7 +151,7 @@ const PoolMaintenance = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/poolh.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Home and Building Maintenance Services in Dubai"
