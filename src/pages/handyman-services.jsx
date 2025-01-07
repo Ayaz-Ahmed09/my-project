@@ -14,7 +14,7 @@ const HandymanService = () => {
       title: "Renovation",
       description:
         "Transform your space with expert renovation services, blending style and quality for a perfect home upgrade.",
-      image: "/win.jpeg",
+      image: "/reno1.jpg",
       callNowLink: "+971569096124",
       link: "/renovation-service",
     },
@@ -22,7 +22,7 @@ const HandymanService = () => {
       title: "Plumbing Services",
       description:
         "From leaks to clogs, our expert plumbers provide fast and reliable solutions to keep your plumbing in top shape.",
-      image: "/phb.png",
+      image: "/pf.jpg",
       callNowLink: "+971569096124",
       link: "/plumbing-services",
     },
@@ -52,21 +52,21 @@ const HandymanService = () => {
       title: "TV Mounting",
       description:
         "From tidying up tangled wires to securely mounting your TV, hire our experts to ensure a seamless and enjoyable entertainment setup. So, Call Now!",
-      image: "/tv.jpeg",
+      image: "/tv1.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Fixing Shelves",
       description:
         " Whether it’s organizing clutter or enhancing your decor, hire our team of handyman experts who ensures sturdy and stylish shelf installations in minimal time!",
-      image: "/shalve.jpeg",
+      image: "/fs.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Furniture Assembly",
       description:
         " Hire our experts to get the Furniture Assembly Service to put together the furniture pieces that will save you time and hassle promptly.",
-      image: "/fa.jpeg",
+      image: "/ff.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -80,7 +80,7 @@ const HandymanService = () => {
       title: "Flooring",
       description:
         " Hire us to repair damaged floors, install new flooring materials like tiles, laminate, or vinyl, and refinish hardwood floors.",
-      image: "/floor.jpeg",
+      image: "/floor.jpg",
       callNowLink: "+971569096124",
     },
     {

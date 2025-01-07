@@ -14,84 +14,84 @@ const RenovationService = () => {
       title: "Bathroom",
       description:
         "Upgrade your bathroom’s fixtures & flooring to create a modern & more functional space, with our renovation services in Dubai.",
-      image: "/Bathroom.jpeg",
+      image: "/bath12.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Ceiling",
       description:
         " Our renovation experts will add aesthetic brilliance to your interior with custom gypsum ceiling installation and repair solutions.",
-      image: "/Celling.jpeg",
+      image: "/celling.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Kitchen",
       description:
         "From cabinet making to countertop installation and custom kitchen designs, we’ll add aesthetics & functionality to your kitchen. ",
-      image: "/Kitchen.jpeg",
+      image: "/kichten.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Roofing",
       description:
         "Trust our professionals to tackle installation and repairs of your property’s roofs, ensuring durability and peace of mind promptly.",
-      image: "/roofing.jpeg",
+      image: "/roof.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Gardening Or Landscaping",
       description:
         " Our landscaping services will enhance your home’s curb appeal. We’ll consider your lifestyle, preferences, and budget to create a customized landscape design that exceeds your expectations.",
-      image: "/Garden.jpeg",
+      image: "/garden.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Tile Installation Or Fixing",
       description:
         " Enhance your space with stunning tile fixings or installations that complement your home’s style and functionality. Our skilled technicians ensure a flawless finish.",
-      image: "/flooring.jpeg",
+      image: "/tile.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Garage Door Repair or Installation",
       description:
         " Our expert technicians ensure your garage door opens and closes effortlessly every time. Whether it’s a simple repair or a complete replacement, we have the expertise to get the job done right.",
-      image: "/grage.jpeg",
+      image: "/garage.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Brick Wall Breaker",
       description:
         " Our team of experienced professionals is equipped to handle demolition projects of any size or complexity, from small interior demolition to large-scale structural demolition.",
-      image: "/brick.jpeg",
+      image: "/brick.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Apartment Renovation Service",
       description:
         "Our apartment renovation services will not only improve the look of your apartment but also enhance its functionality and overall comfort. By upgrading, you’ll be investing in your well-being and creating a space that truly reflects your personal style.",
-      image: "/Apartment.jpeg",
+      image: "/appart.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Villa Renovation Service",
       description:
         " Our expert Villa renovation services will elevate your space, from grand living rooms to serene bedrooms and a kitchen, create a spa-like bathroom, or enhance your outdoor living areas; we’ll exceed your expectations.",
-      image: "/villa.jpeg",
+      image: "/villa.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Home Renovation",
       description:
         "Transform your home into a beautiful and functional space. Our skilled team can handle everything from minor upgrades to full-scale house renovations. From kitchen and bathroom remodeling to flooring and painting, we’ll bring your vision to life.",
-      image: "/Hr.jpeg",
+      image: "/home.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Office Renovation Services",
       description:
         " Transform your workspace with our expert office renovation services. From open-plan layouts to private offices, we’ll create a functional and stylish environment.",
-      image: "/Office.jpeg",
+      image: "/office.jpeg",
       callNowLink: "+971569096124",
     },
   ];
@@ -163,6 +163,7 @@ const RenovationService = () => {
       <AboutUsDynamic
         title="Renovation Services In Dubai For Residential And Commercial Properties"
         text="At Supreme Renovators & Maintenance Services, we’re committed to transforming your home into a space you’ll love. With our expertise and dedication, we deliver exceptional renovation services that exceed expectations. From modernizing your kitchen to creating a serene bedroom retreat, our team of skilled professionals is ready to bring your vision to life.We use the latest techniques and high-quality materials to ensure long-lasting results. Our attention to detail and commitment to customer satisfaction set us apart. Whether you’re looking for a complete home renovation or a simple room, kitchen, and bathroom remodeling, we’re here to help."
+        points={["Trusted Team", "Reliable Work", "Experience Team"]}
         imageSrc="/reno2.png"
         imageAlt="Image of man having all tools in hand"
       />

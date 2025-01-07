@@ -1,3 +1,4 @@
+"use strict";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -10,7 +11,6 @@ import RenovationService from "./pages/renovation-services";
 import ElectricalService from "./pages/electrical-services";
 import CarpentryService from "./pages/carpentry-service";
 import PaintingService from "./pages/painting-service";
-// import PoolMaintenance from "./pages/pool-maintenance";
 import PestControl from "./pages/pest-control";
 import Footer from "./components/Footer";
 import HomeAppliance from "./pages/home-appliance";
@@ -22,6 +22,7 @@ import VillaPainting from "./pages/villa-painting";
 import HousePainting from "./pages/house-painting";
 import About from "./pages/about";
 import ContactPage from "./pages/contact";
+import FloatingButton from "./components/FloatingButton";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router>
@@ -49,7 +50,7 @@ createRoot(document.getElementById("root")).render(
           path="/painting-service/house-painting"
           element={<HousePainting />}
         />
-        {/* <Route path="/pool-maintenance" element={<PoolMaintenance />} /> */}
+
         <Route path="/pest-control" element={<PestControl />} />
         {/* Nested Route for HomeAppliance */}
         {/* HomeAppliance Route: List of Services */}
@@ -68,6 +69,7 @@ createRoot(document.getElementById("root")).render(
           element={<FridgeRepair />}
         />
       </Routes>
+      <FloatingButton />
       <Footer />
     </Router>
   </StrictMode>

@@ -112,6 +112,7 @@ const HomeAppliance = () => {
         <AboutUsDynamic
           title="Cost-Effective Home Appliance Repairing Service In Dubai"
           text="With years of experience and a commitment to customer satisfaction, we are the trusted choice for home appliance repairs in Dubai. Our team of expert technicians possesses in-depth knowledge of various appliance brands and models, enabling them to accurately diagnose and resolve a wide range of issues. We utilize the latest tools and techniques to ensure efficient and effective repairs, backed by a guarantee of quality workmanship."
+          points={["10 years of experience", "Trusted Team"]}
           imageSrc="/h2.png"
           imageAlt="Image of man having all tools in hand"
         />
@@ -143,7 +144,6 @@ const HomeAppliance = () => {
             points={whyChooseUsData.points}
           />
         </div>
-        {/* <Outlet /> */}
       </div>
     </>
   );

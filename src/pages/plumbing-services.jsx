@@ -29,7 +29,7 @@ const PlumbingService = () => {
       title: "Water Tank Cleaning",
       description:
         "From overhead to underground tanks, rely on us for top-notch water tank cleaning service in Dubai to ensure safety & hygienic living. So, call us now! ",
-      image: "/tank.jpeg",
+      image: "/wt.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -43,7 +43,7 @@ const PlumbingService = () => {
       title: "Bath Tub Installation",
       description:
         " From handling bathtub installation, and repair to maintenance, hire our experts to ensure its functionality for well-draining tubs.",
-      image: "/Bath.jpeg",
+      image: "/bath.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -94,8 +94,6 @@ const PlumbingService = () => {
       {
         icon: FaTools,
         title: "Expert Technicians",
-        // description:
-        // "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,

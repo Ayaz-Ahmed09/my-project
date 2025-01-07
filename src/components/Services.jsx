@@ -7,7 +7,7 @@ const Services = () => {
       description:
         "Hire our expert for best handyman service for tasks like drywall installation, plumbing services, fixture replacements, and minor home upgrades.",
       link: "/handyman-services",
-      image: "/s1.jpeg",
+      image: "/handy.jpeg",
       callNowLink: "+971569096124",
     },
     {
@@ -15,7 +15,7 @@ const Services = () => {
       description:
         "Your satisfaction is our priority. We offer top-notch plumbing services, from leaky faucets to clogged drains, our plumbers provide efficient solutions.",
       link: "/plumbing-services",
-      image: "/plum.jpg",
+      image: "/plumber12.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -23,7 +23,7 @@ const Services = () => {
       description:
         "Let’s transform your space, from room makeovers to full home renovations. Our Dubai experts will guide you from concept to completion.",
       link: "/renovation-service",
-      image: "/renovation.jpg",
+      image: "/reno.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -39,7 +39,7 @@ const Services = () => {
       description:
         "Custom carpentry solutions to enhance your home. Our skilled craftsmen create beautiful and functional pieces, from custom cabinetry to intricate trim work.",
       link: "/carpentry-service",
-      image: "/s4.jpg",
+      image: "/carpentrey.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -47,7 +47,7 @@ const Services = () => {
       description:
         "From vibrant accent walls to complete room makeovers, we’ll bring your vision to life. Our skilled painters use high-quality paints and techniques to deliver flawless results.",
       link: "/painting-service",
-      image: "/paint.jpeg",
+      image: "/paint.jpg",
       callNowLink: "+971569096124",
     },
     // {
@@ -75,14 +75,6 @@ const Services = () => {
       image: "/Home.jpg",
       callNowLink: "+971569096124",
     },
-
-    // {
-    //   name: "Dish washers",
-    //   description:
-    //     "Our dishwasher service and repair solutions ensure your appliance runs smoothly and efficiently. Whether it’s installation, routine maintenance, or addressing common issues like water leaks, draining problems, or malfunctioning spray arms, we’ve got you covered",
-    //   link: "/Dishwasher",
-    //   image: "/Home.jpeg",
-    // },
   ];
 
   return (
