@@ -1,12 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   // State to toggle the menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Ref for the menu container to check clicks outside
+  const menuRef = useRef(null);
+
   // Function to toggle the menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Function to close the menu when clicking outside
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  // Event listener for clicks outside the menu
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Function to close the menu when any link is clicked
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -27,17 +51,15 @@ const Navbar = () => {
       {/* Desktop Menu (visible on large screens) */}
       <div className="hidden mr-10 lg:flex">
         <ul className="flex text-white font-serif font-semibold gap-8">
-          <Link to={"/"}>
+          <Link to={"/"} onClick={handleLinkClick}>
             <li className="hover:text-gray-300">Home</li>
           </Link>
-          <Link to={"/about"}>About Us</Link>
-          <Link to={"/contact"}>Contact Us</Link>
-
-          {/* <a href="/#services">
-            <li className="hover:text-gray-300">Services</li>
-          </a> */}
-
-          {/* <li className="hover:text-gray-300">Contact</li> */}
+          <Link to={"/about"} onClick={handleLinkClick}>
+            <li className="hover:text-gray-300">About Us</li>
+          </Link>
+          <Link to={"/contact"} onClick={handleLinkClick}>
+            <li className="hover:text-gray-300">Contact Us</li>
+          </Link>
         </ul>
       </div>
 
@@ -63,15 +85,20 @@ const Navbar = () => {
 
       {/* Mobile Menu (visible when isMenuOpen is true) */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 w-full bg-gradient-to-r from-blue-500 via-blue-50 to-blue-500 text-black p-4">
+        <div
+          ref={menuRef}
+          className="lg:hidden absolute top-20 left-0 w-full bg-gradient-to-r from-blue-500 via-blue-50 to-blue-500 text-black p-4"
+        >
           <ul className="flex flex-col gap-4 font-bold text-neutral-500 text-center">
-            <Link to={"/"}>
+            <Link to={"/"} onClick={handleLinkClick}>
               <li className="hover:text-gray-300">Home</li>
             </Link>
-            <Link to={"/about"}>About Us</Link>
-            <Link to={"/contact"}>Contact Us</Link>
-
-            {/* <li className="hover:text-gray-300">Contact</li> */}
+            <Link to={"/about"} onClick={handleLinkClick}>
+              <li className="hover:text-gray-300">About Us</li>
+            </Link>
+            <Link to={"/contact"} onClick={handleLinkClick}>
+              <li className="hover:text-gray-300">Contact Us</li>
+            </Link>
           </ul>
         </div>
       )}

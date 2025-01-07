@@ -14,21 +14,21 @@ const PaintingService = () => {
       title: "Interior Painting",
       description:
         "Hire the Finest Interior Painting service in Dubai so that not only you but your house feels clean as well.",
-      image: "/ip.jpeg",
+      image: "/in.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Exterior Painting",
       description:
         "Whether for Commercial or Residential Spaces, let your exterior speak boldly with our exceptional painting service.",
-      image: "/ep.jpeg",
+      image: "/out.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "End Tenancy",
       description:
         "Rent out your property quickly with our top-notch end-of-tenancy painting service in Dubai. Call us now",
-      image: "/tp.jpeg",
+      image: "/end.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -42,7 +42,7 @@ const PaintingService = () => {
       title: "Villa Painting",
       description:
         "Be ensure that your villa makes a striking first impression. Opt for the finest service in Dubai to avoid worn-off paints.",
-      image: "/vp.jpeg",
+      image: "/villa.jpg",
       callNowLink: "+971569096124",
       viewDetailsLink: "/painting-service/villa-painting",
     },
@@ -50,21 +50,21 @@ const PaintingService = () => {
       title: "Apartment Painting",
       description:
         "Let the small places be transformed into  something beautiful with the best Apartment painter service in Dubai.",
-      image: "/ap.jpeg",
+      image: "/apa.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Office Painting",
       description:
         "Painted walls play a very chief role in maintaining your space. Get your office walls painted from the best painting service in Dubai.",
-      image: "/op.jpeg",
+      image: "/office.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Wall Staining",
       description:
         "Our experts boost the aesthetics of your home and workplace with our professional wall staining service in Dubai.",
-      image: "/wp1.jpeg",
+      image: "/ws.jpg",
       callNowLink: "+971569096124",
     },
     {

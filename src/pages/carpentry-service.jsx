@@ -21,14 +21,14 @@ const CarpentryService = () => {
       title: "Partition Making",
       description:
         " Choose us for wooden partition making to effortlessly enhance style, privacy, and functionality in your home or office.",
-      image: "/wp.jpeg",
+      image: "/wp.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Parquet Floor Making",
       description:
         "Experience timeless elegance with our custom parquet floors, crafted with precision and unique designs.",
-      image: "/wf.jpeg",
+      image: "/wf.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -49,7 +49,7 @@ const CarpentryService = () => {
       title: "Wooden Wall Installation",
       description:
         " Trust our expertise in wooden wall installations and repairs to bring calmness and natural aesthetics to your home.",
-      image: "/ww.jpeg",
+      image: "/wall.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -77,7 +77,7 @@ const CarpentryService = () => {
       title: "Kitchen Cabinet Installation",
       description:
         "We deliver custom kitchen cabinet installation and repair services in Dubai, combining premium aesthetics with lasting durability.",
-      image: "/wkc.jpeg",
+      image: "/kc.jpg",
       callNowLink: "+971569096124",
     },
     {

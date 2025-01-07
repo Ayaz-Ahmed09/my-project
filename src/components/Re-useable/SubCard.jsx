@@ -24,7 +24,7 @@ const SubCard = ({
       {/* Content Section */}
       <div className="flex flex-col ml-4 justify-between w-full lg:w-2/3">
         <h2 className="text-xl font-serif font-bold mb-2">{title}</h2>
-        <p className="text-gray-700  mb-4">{description}</p>
+        <p className="text-gray-700 mb-4">{description}</p>
 
         <div className="flex flex-col gap-4 sm:flex-row justify-center items-center space-y-3 sm:space-y-0">
           {/* Call Now Button */}

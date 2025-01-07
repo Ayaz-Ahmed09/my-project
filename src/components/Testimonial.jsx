@@ -1,25 +1,25 @@
 // testimonial data
 const testimonialData = [
   {
+    image: "/r3.png",
+    name: "Khalid Al-Hamadi",
+    position: "Customer",
+    message:
+      "Highly recommend Supreme Maintenance for any home improvement needs—quick, efficient, and affordable service.",
+  },
+  {
     image: "/r1.png",
     name: "Omar Al-Farsi",
     position: "Customer",
     message:
-      "Outstanding work! The team delivered a sleek, functional website that exceeded expectations.",
+      "Supreme Maintenance’s team did an excellent job fixing my plumbing issues, and their service was prompt and reliable.",
   },
   {
     image: "/r2.png",
     name: "Youssef Al-Mansoori",
     position: "Customer",
     message:
-      "Supreme’s expertise transformed our project into a seamless, high-performing web solution",
-  },
-  {
-    image: "/r3.png",
-    name: "Khalid Al-Hamadi",
-    position: "Customer",
-    message:
-      "Highly recommend! Their work on both the front-end and back-end made our site beautiful and reliable",
+      "From electrical work to minor renovations, Supreme Maintenance handled everything with professionalism and expertise.",
   },
 ];
 

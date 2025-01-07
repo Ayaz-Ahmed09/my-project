@@ -10,7 +10,7 @@ const AboutUs = ({ title, text, imageSrc, imageAlt, points = [] }) => {
         {/* Text Section */}
         <div className="items-center  mb-1 text-center">
           <p className="sm:text-lg md:text-lg md:mt-16 lg:text-xl">{text}</p>
-          {points?.length && (
+          {points?.length > 0 && (
             <ul className="list-disc mt-4 w-max mx-auto">
               {points.map((point, index) => (
                 <li className="text-left" key={index}>

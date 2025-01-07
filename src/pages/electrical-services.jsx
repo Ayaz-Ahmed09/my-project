@@ -21,14 +21,14 @@ const ElectricalService = () => {
       title: "Socket Installation",
       description:
         " Get professional socket installation services in Dubai to ensure electrical safety and efficiency.",
-      image: "/socket.jpeg",
+      image: "/si.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Chandelier Repairing",
       description:
         "From chandelier maintenance to electrical repairs, our experts can tackle a wide range of electrical issues, from simple to complex.",
-      image: "/c.jpeg",
+      image: "/cr.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -42,28 +42,28 @@ const ElectricalService = () => {
       title: "Surge Protection",
       description:
         "Protect your investment in electronics with our cutting-edge surge protection technology.",
-      image: "/Surge.jpeg",
+      image: "/sp.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Electrical Upgrades",
       description:
         " Upgrade your electrical system to meet modern standards, enhance your home’s safety, and improve energy efficiency.",
-      image: "/upgrade.jpeg",
+      image: "/eu.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Intercom Installation & Fixing",
       description:
         "Don’t let leaky AC ducts ruin your comfort. Call us today to improve your home’s air quality with our AC duct cleaning and repair services.",
-      image: "/intercom.jpeg",
+      image: "/intercom.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Rewiring Service",
       description:
         "Upgrade your outdated wiring to avoid costly repairs and potential disasters. Don’t wait for an electrical emergency. Call us today for a safety inspection.",
-      image: "/cable.jpeg",
+      image: "/cabels.jpg",
       callNowLink: "+971569096124",
     },
   ];
