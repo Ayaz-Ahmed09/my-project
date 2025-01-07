@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const RenovationService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const RenoServices = [
     {
       title: "Bathroom",
@@ -123,27 +127,27 @@ const RenovationService = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us For Renovation",
+    heading: "Why Choose Us For Renovation Services",
     subheading:
-      "We understand that every project is unique. That’s why at Fix-it Fast Maintenance, we’re dedicated to transforming your space. Our team of skilled professionals offers a wide range of renovation services near you in Dubai tailored to your unique needs. From kitchen and bathroom remodeling to complete villa, apartment, office, and home renovations, we’ll bring your vision to life. We prioritize quality craftsmanship, attention to detail, and customer satisfaction.",
+      "We understand that every project is unique. That’s why at Supreme Maintenance, we’re dedicated to transforming your space. Our team of skilled professionals offers a wide range of renovation services near you in Dubai tailored to your unique needs. From kitchen and bathroom remodeling to complete villa, apartment, office, and home renovations, we’ll bring your vision to life. We prioritize quality craftsmanship, attention to detail, and customer satisfaction.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -153,8 +157,8 @@ const RenovationService = () => {
         title="Renovation"
         subtitle="Services"
         backgroundImage="/new.jpeg"
-        image="/renoHome.png"
-        buttonText="Book Now"
+        image="/reno.png"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Renovation Services In Dubai For Residential And Commercial Properties"
@@ -179,7 +183,7 @@ const RenovationService = () => {
         </div>
       </div>
       <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
-        Our Testimonials
+        Our Client Testimonials
       </h2>
       <TestimonialDynamic testimonialData={RenoTestimonials} />
       <div>

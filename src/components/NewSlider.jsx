@@ -23,12 +23,13 @@ const NewSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    cssEase: "linear",
+    cssEase: "ease",
     responsive: [
       {
-        breakpoint: 1024, // Tablet and larger screens
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Show 2 slides on tablet
+          // tablet screen
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -43,7 +44,7 @@ const NewSlider = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 text-white mt-4 mb-6">
+    <div className="w-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 text-white ">
       <Slider {...settings}>
         {services.map((service, index) => (
           <div

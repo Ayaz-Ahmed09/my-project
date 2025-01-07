@@ -5,21 +5,21 @@ const testimonialData = [
     name: "Omar Al-Farsi",
     position: "Customer",
     message:
-      "Outstanding work! The guy delivered a top-notch website with a perfect blend of sleek design and powerful functionality.",
+      "Outstanding work! The team delivered a sleek, functional website that exceeded expectations.",
   },
   {
     image: "/r2.png",
     name: "Youssef Al-Mansoori",
     position: "Customer",
     message:
-      "Impressive results from Supreme. Their expertise in full-stack development transformed our web project into a seamless, high-performing solution.",
+      "Supreme’s expertise transformed our project into a seamless, high-performing web solution",
   },
   {
     image: "/r3.png",
     name: "Khalid Al-Hamadi",
     position: "Customer",
     message:
-      "Highly recommend for any web development needs. They nailed both the front-end and back-end, making our site both beautiful and reliable.",
+      "Highly recommend! Their work on both the front-end and back-end made our site beautiful and reliable",
   },
 ];
 
@@ -55,6 +55,7 @@ const Testimonial = () => {
                     alt={person.name}
                     width={100}
                     height={100}
+                    loading="eager"
                   />
                 </div>
                 {/* name */}
@@ -74,7 +75,7 @@ const Testimonial = () => {
                 <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
               </div>
               {/* message */}
-              <div className="xl:text-lg text-center md:text-left">
+              <div className="xl:text-lg sm:mb-16 text-center md:text-left">
                 {person.message}
               </div>
             </div>

@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const PaintingService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const PainterService = [
     {
       title: "Interior Painting",
@@ -118,27 +122,27 @@ const PaintingService = () => {
   ];
 
   const whyChooseUsData = {
-    heading: " Why Choose Us For Residential And Commercial Painting Service",
+    heading: " Why Choose Us for Painting Services",
     subheading:
       "At Supreme Maintenance, we understand that every painting project is unique. That’s why we offer a wide range of professional interior and exterior painting services for houses, villas, and offices to meet all your needs. Our team of skilled painters is committed to delivering top-notch painting solutions.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -151,20 +155,23 @@ const PaintingService = () => {
           subtitle="Services"
           backgroundImage="/new.jpeg"
           image="/painter.png"
-          buttonText="Book Now"
+          buttonText="Call Now"
         />
         <AboutUsDynamic
           title="Best Interior And Exterior Painting Services Near You In Dubai"
           text="Transform your home or business with the best interior and exterior painting services near you in Dubai. We offer a wide range of professional painting solutions to enhance your property's aesthetics and value. 
           Cost-Effective Interior & Exterior Paint Service In Dubai
-          10 years Of Experience
-          Licensed Company
-          Certified & expert Painters
-          Free Estimation
-          Quality Work Guaranteed
-          Premium-Quality Paint
+          
           Our expert painters utilize high-quality paints and employ meticulous techniques to deliver flawless finishes. Whether you're looking for a fresh coat of paint for your living room, a vibrant exterior makeover, or intricate decorative finishes, we have the expertise to bring your vision to life.
           We prioritize customer satisfaction and ensure a smooth and hassle-free painting experience. Contact us today for a free quote and let us transform your space."
+          points={[
+            "10 years Of Experience",
+            "Licensed Company",
+            "Certified & expert Painters",
+            "Free Estimation",
+            "Quality Work Guaranteed",
+            "Premium-Quality Paint",
+          ]}
           imageSrc="/pf.png"
           imageAlt="Image of man having all tools in hand"
         />

@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const VillaPainting = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const VillaService = [
     {
       title: "Villa interior",
@@ -88,27 +92,27 @@ const VillaPainting = () => {
     },
   ];
   const whyChooseUsData = {
-    heading: "  Why Choose Us For Villa Painting Service",
+    heading: "  Why Choose Us For Villa Painting Services",
     subheading:
       "We have a team of skilled painters with years of experience in painting villas. We only use the best paints that are long-lasting and look fantastic. We pay close attention to detail, ensuring a flawless finish every time. We care about your happiness and will work with you to make sure you love the results. We make the painting process easy and stress-free for you. Choose us for your villa painting project and experience the difference.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -121,7 +125,7 @@ const VillaPainting = () => {
           subtitle="Services"
           backgroundImage="/new.jpeg"
           image="/painter.png"
-          buttonText="Book Now"
+          buttonText="Call Now"
         />
         <AboutUsDynamic
           title="Best Villa Interior And Exterior Paiting Services In Dubai"

@@ -27,6 +27,7 @@ const TestimonialDynamic = ({ testimonialData }) => {
                   <img
                     src={person.image}
                     alt={person.name}
+                    loading="eager"
                     width={100}
                     height={100}
                   />

@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const ElectricalService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const ElectricalService = [
     {
       title: "Shot Circuit",
@@ -102,20 +106,20 @@ const ElectricalService = () => {
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -126,7 +130,7 @@ const ElectricalService = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/electrician 2.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Residential And Commercial Electrician Service Near You In Dubai"
@@ -134,14 +138,17 @@ const ElectricalService = () => {
 
 Whether you need to install new lighting fixtures, repair faulty wiring, upgrade your electrical panel, or troubleshoot electrical problems, we are here to help.
 
-Cost-Effective Electrician Service close to you
-10 years Experience
-Licensed Company
-Certified Technicians
-Free Estimation
-Quality Work Guaranteed
+
 
 We prioritize customer satisfaction and ensure that all our work is carried out to the highest industry standards. Contact us today for a free quote and experience the difference with our professional and reliable electrical services near you in Dubai."
+        points={[
+          "Cost-Effective Electrician Service close to you",
+          "10 years Experience",
+          "Licensed Company",
+          "Certified Technicians",
+          "Free Estimation",
+          "Quality Work Guaranteed",
+        ]}
         imageSrc="/ele.png"
         imageAlt="Image of man having all tools in hand"
       />
@@ -162,7 +169,7 @@ We prioritize customer satisfaction and ensure that all our work is carried out 
         </div>
       </div>
       <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
-        Our Testimonials
+        Our Client Testimonials
       </h2>
       <TestimonialDynamic testimonialData={electricalTestimonials} />
       <div>

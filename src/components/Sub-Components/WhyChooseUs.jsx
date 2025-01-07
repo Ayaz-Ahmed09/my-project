@@ -8,16 +8,18 @@ const WhyChooseUs = ({ heading, subheading, points }) => {
         </h2>
 
         {/* Subheading */}
-        <p className="mt-4 text-xl text-gray-600">{subheading}</p>
+        <p className="mt-2 p-6 sm:text-lg font-sans md:text-lg lg:text-2xl text-gray-700">
+          {subheading}
+        </p>
 
         {/* List of Points */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-6 grid grid-cols-1 p-6 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {points.map((point, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg"
+              className="flex flex-col items-center  hover:border-2 border-blue-500 text-center p-6 bg-white rounded-lg shadow-lg"
             >
-              <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full mb-4">
+              <div className="w-12 h-12 bg-blue-500  text-white flex items-center justify-center rounded-full mb-4">
                 {/* Icon for each point */}
                 <point.icon className="w-6 h-6" />
               </div>

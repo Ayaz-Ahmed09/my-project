@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const FridgeRepair = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const FridgeService = [
     {
       title: "Fridge compressor ",
@@ -88,20 +92,20 @@ const FridgeRepair = () => {
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -112,17 +116,20 @@ const FridgeRepair = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/fridge1.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Best Refrigerator Repairing Services Near You In Dubai"
-        text="Looking for a professional refrigerator repair service near you in Dubai? Look no further than Fix It Fast Maintenance. We specialize in providing top-notch fridge repair solutions tailored to your specific needs. We offer the best refrigerator repair services in Dubai, whether you’re facing cooling issues, leaks, noise problems, or any other malfunctions. Our technicians are highly trained professionals ready to handle any refrigerator repair job, no matter how big or small.
-         10 years Experience
-         Licensed Company
-         Certified Technicians
-         Free Estimation
-         Quality Work Guaranteed
-         Reasonable Cost"
+        text="Looking for a professional refrigerator repair service near you in Dubai? Look no further than Supreme Maintenance. We specialize in providing top-notch fridge repair solutions tailored to your specific needs. We offer the best refrigerator repair services in Dubai, whether you’re facing cooling issues, leaks, noise problems, or any other malfunctions. Our technicians are highly trained professionals ready to handle any refrigerator repair job, no matter how big or small.
+         "
+        points={[
+          "10 years Experience",
+          "Licensed Company",
+          "Certified Technicians",
+          "Free Estimation",
+          "Quality Work Guaranteed",
+          "Reasonable Cost",
+        ]}
         imageSrc="/fridge2.png"
         imageAlt="Image of man having all tools in hand"
       />

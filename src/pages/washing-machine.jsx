@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const Washingmechine = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const WashingService = [
     {
       title: "Baring ",
@@ -88,27 +92,27 @@ const Washingmechine = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us",
+    heading: "Why Choose Us For Washing Machine Services",
     subheading:
       "A malfunctioning washing machine can throw off your entire week. That’s why you need a repair service that’s fast, reliable, and effective. We use the latest diagnostic tools to quickly identify the issue and the most efficient repair methods to get your washing machine back in action with minimal disruption to your daily life. This also helps prevent future problems, saving you both time and money in the long run.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -119,17 +123,19 @@ const Washingmechine = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/wmh.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Best Washing Machine Fix or Repairing Services Near You In Dubai"
-        text="Need a washing machine repair service near you in Dubai? Supreme Maintenance offers top-notch washing machine repair solutions tailored to your needs. Whether it’s not spinning, leaking, making noise, drainage issues and faulty motors to broken belts and more, our highly trained technicians handle all makes and models.
-         10 years Experience
-         Licensed Company
-         Certified Technicians
-         Free Estimation
-         Quality Work Guaranteed
-         Reasonable Cost"
+        text="Need a washing machine repair service near you in Dubai? Supreme Maintenance offers top-notch washing machine repair solutions tailored to your needs. Whether it’s not spinning, leaking, making noise, drainage issues and faulty motors to broken belts and more, our highly trained technicians handle all makes and models."
+        points={[
+          "10 years Experience",
+          "Licensed Company",
+          "Certified Technicians",
+          "Free Estimation",
+          "Quality Work Guaranteed",
+          "Reasonable Cost",
+        ]}
         imageSrc="/wm2.png"
         imageAlt="Image of man having all tools in hand"
       />
@@ -150,7 +156,7 @@ const Washingmechine = () => {
         </div>
       </div>
       <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
-        Our Testimonials
+        Our Client Testimonials
       </h2>
       <TestimonialDynamic testimonialData={WashingTestimonials} />
       <div>

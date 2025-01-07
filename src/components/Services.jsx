@@ -14,7 +14,7 @@ const Services = () => {
       name: "Plumbing Service",
       description:
         "Your satisfaction is our priority. We offer top-notch plumbing services, from leaky faucets to clogged drains, our plumbers provide efficient solutions.",
-      link: "/plumbing-service",
+      link: "/plumbing-services",
       image: "/plum.jpg",
       callNowLink: "+971569096124",
     },
@@ -23,7 +23,7 @@ const Services = () => {
       description:
         "Let’s transform your space, from room makeovers to full home renovations. Our Dubai experts will guide you from concept to completion.",
       link: "/renovation-service",
-      image: "/reno.jpeg",
+      image: "/renovation.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -31,7 +31,7 @@ const Services = () => {
       description:
         "Professional electrical services without hidden costs from minor repairs to major installations, our electricians are available 24/7 to assist you.",
       link: "/electrical-service",
-      image: "/s3.jpeg", //
+      image: "/electrical.jpg", //
       callNowLink: "+971569096124",
     },
     {
@@ -39,7 +39,7 @@ const Services = () => {
       description:
         "Custom carpentry solutions to enhance your home. Our skilled craftsmen create beautiful and functional pieces, from custom cabinetry to intricate trim work.",
       link: "/carpentry-service",
-      image: "/s4.jpeg",
+      image: "/s4.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -61,19 +61,21 @@ const Services = () => {
     {
       name: "Pest Control",
       description:
-        "Let our specialists handle your pool maintenance, offering services like regular cleaning, chemical balancing, filter cleaning, tile scrubbing, and shock treatments.",
+        "Safeguard your home with our expert pest control services, eliminating pests like ants, termites, and rodents using safe and effective methods.",
       link: "/pest-control",
-      image: "/pest.jpeg",
+      image: "/pest.jpg",
       callNowLink: "+971569096124",
     },
+
     {
       name: "Home Appliance",
       description:
-        "Let our specialists handle your pool maintenance, offering services like regular cleaning, chemical balancing, filter cleaning, tile scrubbing, and shock treatments.",
+        "Get reliable repair and maintenance for all your home appliances, from refrigerators to washing machines, ensuring smooth operation.",
       link: "/home-appliance",
-      image: "/Home.jpeg",
+      image: "/Home.jpg",
       callNowLink: "+971569096124",
     },
+
     // {
     //   name: "Dish washers",
     //   description:

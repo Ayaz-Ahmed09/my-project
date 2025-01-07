@@ -5,16 +5,12 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
-// import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
 const PlumbingService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const PlumberServices = [
-    // {
-    //   title: "Emergency Service",
-    //   description:
-    //     "From addressing burst pipes, and gas leaks to sewage issues, hire our emergency plumbers in Dubai available 24/7 for your convenience.",
-    //   image: "/emergncy.jpeg",
-    //   callNowLink: "+971569096124",
-    // },
     {
       title: "Sanitary Fitting",
       description:
@@ -53,11 +49,10 @@ const PlumbingService = () => {
     {
       title: "Water Heater",
       description:
-        "Your satisfaction is our priority. We offer top-notch plumbing services, from leaky faucets to clogged drains, our plumbers provide efficient solutions.",
-      link: "/home-appliance/water-heater", // Updated Link
+        "Ensure a steady supply of hot water with our water heater repair services, fixing issues like leaks, heating problems, or malfunctions.",
+      // link: "/plumbing-services/water-heater",
       image: "/waterH.jpeg",
       callNowLink: "+971569096124",
-      viewDetailsLink: "/plumbing-services/water-heater",
     },
   ];
   const PlumberTestimonials = [
@@ -92,27 +87,27 @@ const PlumbingService = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us As Dubai's Top-Notch Plumbers",
+    heading: "Why Choose Us For Plumbing Services ",
     subheading:
       "Our team goes beyond basic fixes, delivering the best plumbing solutions tailored to your needs. We use high-quality materials and meticulous attention to detail to ensure perfect results and long-lasting installations. We prioritize clear communication, fair pricing, and exceeding your expectations. Experience prompt and reliable service with one of our technicians arriving at your doorstep in no time. Choose The Supreme Maintenance for a superior plumbing experience in Dubai.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our plumber are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -123,21 +118,23 @@ const PlumbingService = () => {
         subtitle=" Services"
         backgroundImage="/new.jpeg"
         image="/phb.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <div>
         <AboutUsDynamic
           title="Professional Plumbing Services Near You In Dubai"
           text="Finding a reliable plumber near you in Dubai can be a time-consuming task. You need someone trustworthy who can handle a variety of plumbing issues efficiently and professionally. Look no further than The Supreme Maintenance. We are your trusted experts for all your plumbing needs, from fixing those annoying leaks and unclogging stubborn drains to installing new fixtures like sinks, toilets, and showers, and even connecting major appliances like washing machines and dishwashers.
-
 Our certified plumbers possess the skills and experience to handle any plumbing issue, big or small. We understand the importance of a smoothly functioning plumbing system in your home and strive to provide prompt and efficient service to minimize disruption to your daily routine.
-10 years Experience
-Licensed Company
-Certified Plumbers
-Free Estimation
-Quality Work Guaranteed
-Affordable Cost
+
 Choose The Supreme Maintenance for dependable, professional, and efficient plumbing services. Contact us today to schedule your appointment and experience the best in plumbing care. We are available to assist you with all your plumbing needs, from minor repairs to major installations."
+          points={[
+            "10 years Experience",
+            "Licensed Company",
+            "Certified Plumbers",
+            "Free Estimation",
+            "Quality Work Guaranteed",
+            "Affordable Cost",
+          ]}
           imageSrc="/p2.png"
           imageAlt="Image of man having all tools in hand"
         />
@@ -160,7 +157,7 @@ Choose The Supreme Maintenance for dependable, professional, and efficient plumb
         </div>
       </div>
       <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
-        Our Testimonial
+        Our Client Testimonial
       </h2>
       <TestimonialDynamic testimonialData={PlumberTestimonials} />
       <div>

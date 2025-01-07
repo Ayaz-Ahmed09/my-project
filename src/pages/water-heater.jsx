@@ -4,7 +4,11 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const WaterHeater = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const HeaterService = [
     {
       title: "Blower Motor",
@@ -95,27 +99,27 @@ const WaterHeater = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us",
+    heading: "Why Choose Us For Water Heater Services",
     subheading:
       "Choose us for expert water heater services in Dubai. We offer reliable installation, prompt repairs, and professional replacements for all types of water heaters. Our skilled technicians prioritize customer satisfaction and ensure your water heater operates safely and efficiently. Contact us today for a free quote.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -127,7 +131,7 @@ const WaterHeater = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/H1.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <AboutUsDynamic
         title="Best Water Heater Repairing And Installation Service In Dubai"

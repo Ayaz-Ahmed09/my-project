@@ -4,39 +4,42 @@ import Cards from "../components/Re-useable/Cards";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
-import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
 const HomeAppliance = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const HomeService = [
     {
       name: "Dishwasher",
       description:
-        "Hire our expert for best handyman service for tasks like drywall installation, plumbing services, fixture replacements, and minor home upgrades.",
-      link: "/home-appliance/dishwasher-reparing", // Updated Link
+        "Get your dishwasher working like new with our expert repair services, ensuring efficient cleaning and optimal performance.",
+      link: "/home-appliance/dishwasher-repairing",
       image: "/Dish1.jpeg",
       callNowLink: "+971569096124",
     },
-    // {
-    //   name: "Water Heater",
-    //   description:
-    //     "Your satisfaction is our priority. We offer top-notch plumbing services, from leaky faucets to clogged drains, our plumbers provide efficient solutions.",
-    //   link: "/home-appliance/water-heater", // Updated Link
-    //   image: "/waterH.jpeg",
-    //   callNowLink: "+971569096124",
-    // },
+    {
+      name: "Water Heater",
+      description:
+        "Ensure a steady supply of hot water with our water heater repair services, fixing issues like leaks, heating problems, or malfunctions.",
+      link: "/plumbing-services/water-heater",
+      image: "/waterH.jpeg",
+      callNowLink: "+971569096124",
+    },
     {
       name: "Washing Machine",
       description:
-        "Your satisfaction is our priority. We offer top-notch plumbing services, from leaky faucets to clogged drains, our plumbers provide efficient solutions.",
-      link: "/home-appliance/washing-mechine",
+        "Restore your washing machine to full functionality with our expert repairs, solving problems from water drainage to motor issues.",
+      link: "/home-appliance/washing-machine",
       image: "/Washing.jpeg",
       callNowLink: "+971569096124",
     },
     {
       name: "Refrigerator",
       description:
-        "Your satisfaction is our priority. We offer top-notch plumbing services, from leaky faucets to clogged drains, our plumbers provide efficient solutions.",
-      link: "/home-appliance/fridge-repair", // Or update based on actual service
-      image: "/Dishwasher.jpeg",
+        "Keep your food fresh with our professional refrigerator repair services, fixing cooling issues, leaks, and other appliance malfunctions.",
+      link: "/home-appliance/refrigerator-repair",
+      image: "/fridge.jpg",
       callNowLink: "+971569096124",
     },
   ];
@@ -71,27 +74,27 @@ const HomeAppliance = () => {
     },
   ];
   const whyChooseUsData = {
-    heading: "Why Choose Us",
+    heading: "Why Choose Us For Home Appliance Services",
     subheading:
       "Choose us for the best home appliance repair service in Dubai and experience the difference. We prioritize customer satisfaction above all else, offering prompt and reliable service for all your major appliances including washing machines, water heaters, refrigerators, and dishwashers. Our team of highly skilled and certified technicians possess in-depth knowledge and expertise in repairing all major brands, ensuring quick and effective solutions to any appliance issue. ",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -104,7 +107,7 @@ const HomeAppliance = () => {
           subtitle="Services"
           backgroundImage="/new.jpeg"
           image="/h1.png"
-          buttonText="Book Now"
+          buttonText="Call Now"
         />
         <AboutUsDynamic
           title="Cost-Effective Home Appliance Repairing Service In Dubai"
@@ -140,7 +143,7 @@ const HomeAppliance = () => {
             points={whyChooseUsData.points}
           />
         </div>
-        <Outlet />
+        {/* <Outlet /> */}
       </div>
     </>
   );

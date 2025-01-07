@@ -4,14 +4,35 @@ import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
 import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
+import { useEffect } from "react";
 const HandymanService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handymanServices = [
     {
       title: "Renovation",
       description:
-        "Our renovators will transform your space into a stunning showcase of quality and style with expert craftsmanship.",
+        "Transform your space with expert renovation services, blending style and quality for a perfect home upgrade.",
       image: "/win.jpeg",
       callNowLink: "+971569096124",
+      link: "/renovation-service",
+    },
+    {
+      title: "Plumbing Services",
+      description:
+        "From leaks to clogs, our expert plumbers provide fast and reliable solutions to keep your plumbing in top shape.",
+      image: "/phb.png",
+      callNowLink: "+971569096124",
+      link: "/plumbing-services",
+    },
+    {
+      title: "Electrical Services",
+      description:
+        "Ensure your home’s safety and efficiency with our professional electrical services, from repairs to installations.",
+      image: "/electrical.jpg",
+      callNowLink: "+971569096124",
+      link: "/electrical-service",
     },
     {
       title: "Bath Fixing",
@@ -30,7 +51,7 @@ const HandymanService = () => {
     {
       title: "TV Mounting",
       description:
-        "From tidying up tangled wires to securely mounting your TV, hire our experts to ensure a seamless and enjoyable entertainment setup. So, book now!",
+        "From tidying up tangled wires to securely mounting your TV, hire our experts to ensure a seamless and enjoyable entertainment setup. So, Call Now!",
       image: "/tv.jpeg",
       callNowLink: "+971569096124",
     },
@@ -105,27 +126,27 @@ const HandymanService = () => {
 
   // why choose us
   const whyChooseUsData = {
-    heading: "Why Choose Our Handyman Services",
+    heading: "Why Choose For Our Handyman Services",
     subheading:
       "We are committed to providing the best handyman services in Dubai with quality, trust, and reliability.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        description:
-          "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
+        // description:
+        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        description:
-          "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
+        // description:
+        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        description:
-          "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
@@ -137,20 +158,22 @@ const HandymanService = () => {
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/hand.png"
-        buttonText="Book Now"
+        buttonText="Call Now"
       />
       <div>
         <AboutUsDynamic
           title="Home and Building Maintenance Services in Dubai"
-          text="Looking for a reliable handyman service near you in Dubai? Look no further than Fix It Fast Maintenance. We are your trusted experts in providing exceptional home maintenance solutions tailored to meet your unique needs. Whether you’re dealing with a leaky faucet, need furniture assembly, TV mounting, shelf fixing, picture hanging, or curtain installation, our skilled handymen are here to help.
-          Over 10 Years of Experience
-Fully Licensed Company
-Certified Plumbers
-Free Estimation
-Quality Work Guaranteed
-Affordable and Transparent Pricing"
-          imageSrc="/handban.png"
+          text="Looking for a reliable handyman service near you in Dubai? Look no further than Supreme Maintenance. We are your trusted experts in providing exceptional home maintenance solutions tailored to meet your unique needs. Whether you’re dealing with a leaky faucet, need furniture assembly, TV mounting, shelf fixing, picture hanging, or curtain installation, our skilled handymen are here to help."
+          imageSrc="/handyman2.png"
           imageAlt="Image of man having all tools in hand"
+          points={[
+            "Over 10 Years of Experience",
+            "Fully Licensed Company",
+            "Certified Plumbers",
+            "Free Estimation",
+            "Quality Work Guaranteed",
+            "Affordable and Transparent Pricing",
+          ]}
         />
       </div>
       <div>
@@ -165,6 +188,7 @@ Affordable and Transparent Pricing"
               description={service.description}
               image={service.image}
               callNowLink={service.callNowLink}
+              viewDetailsLink={service.link}
             />
           ))}
         </div>
