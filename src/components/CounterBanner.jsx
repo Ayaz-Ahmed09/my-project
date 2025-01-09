@@ -3,8 +3,8 @@ import CountUp from "react-countup";
 
 const CounterBanner = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Ensures the animation happens only once when the element is in view
-    threshold: 0.5, // The percentage of the component that should be visible before triggering
+    triggerOnce: true,
+    threshold: 0.5,
   });
 
   return (

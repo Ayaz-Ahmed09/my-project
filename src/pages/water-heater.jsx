@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const WaterHeater = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,7 +58,7 @@ const WaterHeater = () => {
       title: "Solar Heater Installation",
       description:
         "Comprehensive heater inspection and testing to ensure optimal performance and safety.",
-      image: "/solar.jpeg",
+      image: "/sw.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -121,6 +123,12 @@ const WaterHeater = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
 
@@ -140,6 +148,9 @@ const WaterHeater = () => {
         imageSrc="/H2.png"
         imageAlt="Image of man having all tools in hand"
       />
+      <div>
+        <Counter services={8} experience={10} satisfiedClients={300} />
+      </div>
       <div>
         <h2 className="text-center text-3xl font-bold mt-6">
           Our Water Heater Services
@@ -166,6 +177,9 @@ const WaterHeater = () => {
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );
