@@ -3,9 +3,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const PlumbingService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,7 +38,7 @@ const PlumbingService = () => {
       title: "Water Pump Repair",
       description:
         "From water pump installation to its maintenance and repair in Dubai, hire our expert plumbers to ensure efficient water circulation.",
-      image: "/waterP.jpeg",
+      image: "/waterP.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -107,6 +109,12 @@ const PlumbingService = () => {
         // description:
         // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
@@ -138,6 +146,9 @@ Choose The Supreme Maintenance for dependable, professional, and efficient plumb
         />
       </div>
       <div>
+        <Counter services={6} experience={10} satisfiedClients={800} />
+      </div>
+      <div>
         <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
           Our Plumbing Services
         </h2>
@@ -164,6 +175,9 @@ Choose The Supreme Maintenance for dependable, professional, and efficient plumb
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
       {/* <Outlet /> */}
     </div>

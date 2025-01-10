@@ -35,7 +35,7 @@ const ContactUs = () => {
 
     // Send the form data to Formspree
     try {
-      const response = await fetch("https://formspree.io/f/yourFormID", {
+      const response = await fetch("https://formspree.io/f/xzzzkldv", {
         // REPLACE with your Formspree URL
         method: "POST",
         headers: {
@@ -179,7 +179,7 @@ const ContactUs = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 rounded hover:bg-blue-600"
+              className="w-full bg-blue-500 text-white py-3 rounded hover:bg-yellow-500"
             >
               Submit
             </button>

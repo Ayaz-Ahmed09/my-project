@@ -27,7 +27,7 @@ const About = () => {
             />
           </div>
         </div> */}
-          <p className="text-lg text-gray-600  mb-8">
+          <p className="text-lg text-gray-600 p-4  mb-8">
             At the Supreme Maintenance, we are more than just a maintenance
             company; we are your trusted partners in preserving the beauty and
             functionality of your Dubai property. With 10 years of experience

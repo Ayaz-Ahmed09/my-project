@@ -12,7 +12,7 @@ const SubCard = ({
   };
 
   return (
-    <div className="w-auto md:mx-4 flex flex-col lg:flex-row hover:border-2 border-blue-500 p-6 bg-slate-50 rounded-lg shadow-lg overflow-hidden max-w-full">
+    <div className="w-auto  flex flex-col lg:flex-row hover:border-2 border-blue-500 p-6 bg-slate-50 rounded-lg shadow-lg overflow-hidden max-w-full">
       {/* Image Section */}
       <img
         src={image}
@@ -22,7 +22,7 @@ const SubCard = ({
       />
 
       {/* Content Section */}
-      <div className="flex flex-col ml-4 justify-between w-full lg:w-2/3">
+      <div className="flex flex-col lg:ml-4 justify-between w-full lg:w-2/3">
         <h2 className="text-xl font-serif font-bold mb-2">{title}</h2>
         <p className="text-gray-700 mb-4">{description}</p>
 

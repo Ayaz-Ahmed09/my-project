@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import Cards from "../components/Re-useable/Cards";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const HomeAppliance = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,7 +16,7 @@ const HomeAppliance = () => {
       name: "Dishwasher",
       description:
         "Get your dishwasher working like new with our expert repair services, ensuring efficient cleaning and optimal performance.",
-      link: "/home-appliance/dishwasher-repairing",
+      link: "/home-appliance/dishwasher-reparing",
       image: "/Dish1.jpeg",
       callNowLink: "+971569096124",
     },
@@ -49,52 +51,51 @@ const HomeAppliance = () => {
       name: "Ahmed Al-Farsi",
       position: "Customer",
       message:
-        "I had a plumbing issue that needed urgent attention, and Supreme maintenance team responded quickly and professionally. The work was done perfectly, and they even cleaned up afterward. Highly recommend!",
+        "My dishwasher broke down just before a big family gathering, but Supreme's team arrived quickly and fixed it in no time. The service was efficient, and my dishwasher works like new again!",
     },
     {
       image: "/r10.png",
-      name: "Layla Hassan",
+      name: "Hassan",
       position: "Customer",
       message:
-        "The handyman service was outstanding. From fixing my kitchen sink to installing new shelves in my living room, everything was done with attention to detail. I'm very happy with the quality and speed of the service.",
+        "I had a refrigerator issue where it stopped cooling. Supreme's technician diagnosed the problem right away and had it repaired in no time. Excellent service, and my fridge is back to working perfectly!",
     },
     {
       image: "/r9.png",
       name: "Faisal Al-Mansoori",
       position: "Customer",
       message:
-        "I needed some electrical work done in my apartment, and I couldn't be more impressed with Supreme team. They arrived on time, diagnosed the issue right away, and fixed it efficiently. Exceptional service, will definitely call them again!",
+        "I was having trouble with my water heater, and the Supreme team came to the rescue. They identified the issue quickly and provided a fast and effective repair. I’m very happy with their work!",
     },
     {
       image: "/r12.png",
       name: "Shamsi",
       position: "Customer",
       message:
-        "I had an issue with a broken door and a leaking tap in my villa, and Supreme's handyman was at my place in no time. He fixed both issues quickly, and the pricing was very reasonable for the quality of service. I'm a loyal customer now!",
+        "My washing machine had a strange noise and stopped spinning. I called Supreme, and their technician arrived on time, fixed the issue, and explained everything clearly. Now my washing machine is working like a charm!",
     },
   ];
+
   const whyChooseUsData = {
     heading: "Why Choose Us For Home Appliance Services",
     subheading:
-      "Choose us for the best home appliance repair service in Dubai and experience the difference. We prioritize customer satisfaction above all else, offering prompt and reliable service for all your major appliances including washing machines, water heaters, refrigerators, and dishwashers. Our team of highly skilled and certified technicians possess in-depth knowledge and expertise in repairing all major brands, ensuring quick and effective solutions to any appliance issue. ",
+      "Choose us for the best home appliance repair service in Dubai and experience the difference. We prioritize customer satisfaction above all else, offering prompt and reliable service for all your major appliances including washing machines, water heaters, refrigerators, and dishwashers. Our team of highly skilled and certified technicians possess in-depth knowledge and expertise in repairing all major brands, ensuring quick and effective solutions to any appliance issue. We use genuine parts and employ the latest repair techniques to guarantee lasting results. With competitive pricing, transparent service quotes, and a commitment to customer satisfaction, we strive to provide the best possible value and an exceptional service experience that exceeds your expectations.",
     points: [
       {
         icon: FaTools,
         title: "Expert Technicians",
-        // description:
-        // "Our handymen are highly skilled and experienced in various home repair tasks, ensuring quality work every time.",
       },
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        // description:
-        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        // description:
-        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
       },
     ],
   };
@@ -112,10 +113,13 @@ const HomeAppliance = () => {
         <AboutUsDynamic
           title="Cost-Effective Home Appliance Repairing Service In Dubai"
           text="With years of experience and a commitment to customer satisfaction, we are the trusted choice for home appliance repairs in Dubai. Our team of expert technicians possesses in-depth knowledge of various appliance brands and models, enabling them to accurately diagnose and resolve a wide range of issues. We utilize the latest tools and techniques to ensure efficient and effective repairs, backed by a guarantee of quality workmanship."
-          points={["10 years of experience", "Trusted Team"]}
+          // points={["10 years of experience", "Trusted Team"]}
           imageSrc="/h2.png"
           imageAlt="Image of man having all tools in hand"
         />
+        <div>
+          <Counter services={4} experience={10} satisfiedClients={500} />
+        </div>
         <div>
           <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
             Our Home Appliance Repairing Services
@@ -143,6 +147,9 @@ const HomeAppliance = () => {
             subheading={whyChooseUsData.subheading}
             points={whyChooseUsData.points}
           />
+        </div>
+        <div>
+          <ContactUs />
         </div>
       </div>
     </>

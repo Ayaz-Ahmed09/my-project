@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const Dishwasher = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -136,6 +138,12 @@ const Dishwasher = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
@@ -164,6 +172,9 @@ const Dishwasher = () => {
           />
         </div>
         <div>
+          <Counter services={10} experience={10} satisfiedClients={400} />
+        </div>
+        <div>
           <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
             Our Dishwasher Repairing Services
           </h2>
@@ -190,6 +201,7 @@ const Dishwasher = () => {
             points={whyChooseUsData.points}
           />
         </div>
+        <ContactUs />
       </div>
     </>
   );

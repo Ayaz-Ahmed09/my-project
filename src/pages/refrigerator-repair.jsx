@@ -2,19 +2,21 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const FridgeRepair = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const FridgeService = [
     {
-      title: "Fridge compressor ",
+      title: "Refrigerator compressor ",
       description:
         "Is your fridge not cooling? Our expert technicians specialize in fridge compressor repair, diagnosing and fixing issues quickly to restore your refrigerator’s cooling efficiency.",
-      image: "/fc.jpeg",
+      image: "/com.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -42,14 +44,14 @@ const FridgeRepair = () => {
       title: "Gas Refill ",
       description:
         "Is your refrigerator not cooling sufficiently? It may need refrigerant recharging (gas refilling). We offer professional refrigerant recharging services to restore optimal cooling performance.",
-      image: "/gas.jpeg",
+      image: "/gas.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Thermostat",
       description:
         "Is your refrigerator too warm or too cold? A faulty thermostat could be the problem. We diagnose and replace refrigerator thermostats to ensure accurate temperature control.",
-      image: "/ft.jpeg",
+      image: "/thermo.jpg",
       callNowLink: "+971569096124",
     },
   ];
@@ -85,7 +87,7 @@ const FridgeRepair = () => {
   ];
 
   const whyChooseUsData = {
-    heading: "Why Choose Us For Fridge Repairing Services",
+    heading: "Why Choose Us For Refrigerator Repairing Services",
     subheading:
       "When your refrigerator breaks down, you need a reliable and efficient repair service you can trust. Here’s why we’re the right choice for all your refrigerator repair needs: We use the latest diagnostic equipment and repair tools to quickly and accurately identify and fix any refrigerator issue. This means faster repairs and less disruption to your daily routine. This protects your investment and prevents future breakdowns.",
     points: [
@@ -107,12 +109,18 @@ const FridgeRepair = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
     <div>
       <HeroSectionDynamic
-        title="Fridge Machinic At Your"
+        title="Mechanic At Your"
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/fridge1.png"
@@ -127,17 +135,20 @@ const FridgeRepair = () => {
           "Licensed Company",
           "Certified Technicians",
           "Free Estimation",
-          "Quality Work Guaranteed",
+          "Quality Work ",
           "Reasonable Cost",
         ]}
         imageSrc="/fridge2.png"
         imageAlt="Image of man having all tools in hand"
       />
       <div>
+        <Counter services={6} experience={10} satisfiedClients={250} />
+      </div>
+      <div>
         <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
           Refrigerator Services
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {FridgeService.map((service, index) => (
             <SubCard
               key={index}
@@ -159,6 +170,9 @@ const FridgeRepair = () => {
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

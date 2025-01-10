@@ -2,9 +2,12 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+// import DynamicCounter from "../components/Sub-Components/DynamicCounter";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const HandymanService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,7 +41,7 @@ const HandymanService = () => {
       title: "Bath Fixing",
       description:
         "Our expert plumbers provide efficient and reliable solutions for all your plumbing challenges. Our skilled technicians tackle even the toughest plumbing issues.",
-      image: "/Bath.jpeg",
+      image: "/b12.jpg",
       callNowLink: "+971569096124",
     },
     // {
@@ -87,7 +90,7 @@ const HandymanService = () => {
       title: "General Maintenance",
       description:
         " We’ll help repair minor damages, such as drywall holes, loose tiles, squeaky doors, or leaky faucets to maintain your property.",
-      image: "/gm.jpeg",
+      image: "/gm.jpg",
       callNowLink: "+971569096124",
     },
   ];
@@ -128,7 +131,7 @@ const HandymanService = () => {
   const whyChooseUsData = {
     heading: "Why Choose For Our Handyman Services",
     subheading:
-      "We are committed to providing the best handyman services in Dubai with quality, trust, and reliability.",
+      "Simplify your home maintenance with our trusted handyman services. From minor repairs to larger tasks, we handle it all with professionalism and transparent pricing. Let us take care of your to-do list, so you can enjoy your home without the hassle. Our skilled handymen are committed to exceeding your expectations, one project at a time.Contact us today for reliable handyman services in Dubai at competitive rates!",
     points: [
       {
         icon: FaTools,
@@ -148,6 +151,12 @@ const HandymanService = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
 
@@ -162,23 +171,26 @@ const HandymanService = () => {
       />
       <div>
         <AboutUsDynamic
-          title="Home and Building Maintenance Services in Dubai"
+          title=" Best Handyman Services Near You In Dubai"
           text="Looking for a reliable handyman service near you in Dubai? Look no further than Supreme Maintenance. We are your trusted experts in providing exceptional home maintenance solutions tailored to meet your unique needs. Whether you’re dealing with a leaky faucet, need furniture assembly, TV mounting, shelf fixing, picture hanging, or curtain installation, our skilled handymen are here to help."
           imageSrc="/handyman2.png"
           imageAlt="Image of man having all tools in hand"
           points={[
-            "Over 10 Years of Experience",
-            "Fully Licensed Company",
+            "10 Years Experience",
+            "Licensed Company",
             "Certified Plumbers",
             "Free Estimation",
-            "Quality Work Guaranteed",
-            "Affordable and Transparent Pricing",
+            "Quality Work ",
+            "Affordable Pricing",
           ]}
         />
       </div>
       <div>
+        <Counter services={10} experience={10} satisfiedClients={800} />
+      </div>
+      <div>
         <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
-          Best Handyman Services Near You In Dubai
+          Our Handyman Services In Dubai&apos;s Multiple Locations
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {handymanServices.map((service, index) => (
@@ -193,6 +205,7 @@ const HandymanService = () => {
           ))}
         </div>
       </div>
+      <div>{/* <DynamicCounter countersData={counterData} /> */}</div>
       <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
         Our Testimonials About Handyman Services
       </h2>
@@ -203,6 +216,9 @@ const HandymanService = () => {
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

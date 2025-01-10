@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const VillaPainting = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,7 +30,7 @@ const VillaPainting = () => {
       title: "Accent walls villa",
       description:
         "Transform your interior with vibrant accent walls that bring character and depth, tailored to match your villa’s unique style.",
-      image: "/va.jpg",
+      image: "/aw.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -50,7 +52,7 @@ const VillaPainting = () => {
       title: "Stain and vernish",
       description:
         "Let the small places be transformed into  something beautiful with the best Apartment painter service in Dubai.",
-      image: "/vsv.jpg",
+      image: "/sv.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -64,7 +66,7 @@ const VillaPainting = () => {
       title: "villa water proofing",
       description:
         "Shield your villa from water damage with our advanced waterproofing solutions, ensuring long-lasting protection and peace of mind",
-      image: "/vw.jpg",
+      image: "/vwp.jpg",
       callNowLink: "+971569096124",
     },
   ];
@@ -114,6 +116,12 @@ const VillaPainting = () => {
         // description:
         // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
@@ -138,8 +146,11 @@ Experience the difference of our top-notch villa painting services and create a 
           imageAlt="Image of man having all tools in hand"
         />
         <div>
-          <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
-            Our Painting Services Near You In Dubai
+          <Counter services={8} experience={10} satisfiedClients={800} />
+        </div>
+        <div>
+          <h2 className="text-center p-2 text-3xl font-serif text-blue-500 font-bold mt-6">
+            Our Villa Painting Services Near You In Dubai
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
             {VillaService.map((service, index) => (
@@ -164,6 +175,9 @@ Experience the difference of our top-notch villa painting services and create a 
             subheading={whyChooseUsData.subheading}
             points={whyChooseUsData.points}
           />
+        </div>
+        <div>
+          <ContactUs />
         </div>
       </div>
     </>

@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const PestControl = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -67,7 +69,7 @@ const PestControl = () => {
   const whyChooseUsData = {
     heading: "Why Choose Us For Pest Control Services ",
     subheading:
-      "Choose us for your pest control needs in Dubai and experience a level of service that goes beyond simply eliminating pests. We prioritize your safety and well-being, utilizing safe and effective methods, including eco-friendly and non-toxic options, to ensure the protection of your family and pets.",
+      "Choose us for your pest control needs in Dubai and experience a level of service that goes beyond simply eliminating pests. We prioritize your safety and well-being, utilizing safe and effective methods, including eco-friendly and non-toxic options, to ensure the protection of your family and pets.Our team of highly trained and experienced technicians conduct thorough inspections to identify the root cause of the infestation and develop customized treatment plans to effectively address the issue. We are committed to providing long-term pest control solutions, preventing future infestations and ensuring your peace of mind.Contact Us for hassle-free pest control service in Dubai.",
     points: [
       {
         icon: FaTools,
@@ -87,6 +89,12 @@ const PestControl = () => {
         // description:
         // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
@@ -101,10 +109,13 @@ const PestControl = () => {
       <AboutUsDynamic
         title="Best Pest Control Services Near You In Dubai"
         text="Experience peace of mind with our professional pest control services in Dubai. We effectively eliminate a wide range of pests, including cockroaches, ants, termites, bed bugs, rodents, and more. Our expert technicians utilize safe and effective methods, including eco-friendly and non-toxic options, to ensure the safety of your family and pets.We conduct thorough inspections to identify the root cause of the infestation and implement customized treatment plans to effectively eliminate the problem and prevent future occurrences. With our commitment to customer satisfaction and a focus on providing long-term pest control solutions, you can trust us to keep your home or business pest-free and protect your valuable assets."
-        points={["Professional Team", "Effective Solutions"]}
+        // points={["Professional Team", "Effective Solutions"]}
         imageSrc="/ph2.png"
         imageAlt="Image of man having all tools in hand"
       />
+      <div>
+        <Counter services={4} experience={10} satisfiedClients={200} />
+      </div>
       <div>
         <h2 className="text-center text-blue-500 font-serif text-3xl font-bold mt-6">
           Our Pest Control Services
@@ -131,6 +142,9 @@ const PestControl = () => {
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

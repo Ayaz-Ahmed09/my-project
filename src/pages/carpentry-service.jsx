@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const CarpentryService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -63,14 +65,14 @@ const CarpentryService = () => {
       title: "Wood Stairs",
       description:
         "We deliver custom wooden stair installation and repair services in Dubai, combining premium aesthetics with lasting durability.",
-      image: "/ws.jpeg",
+      image: "/ws1.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Wardrobe Installation & Repairing",
       description:
         "iLet our expert team transform your space with stylish and functional wardrobe solutions. From installation to repair, we’ve got you covered.",
-      image: "/wa.jpeg",
+      image: "/wo.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -129,7 +131,7 @@ const CarpentryService = () => {
   const whyChooseUsData = {
     heading: "Why Choose Us For Your Carpentry Needs",
     subheading:
-      "We recognize that every project is unique and tailor our services to meet your specific needs. Our skilled craftsmen combine traditional woodworking techniques with modern technology to deliver exceptional results. We use the finest materials and adhere to industry best practices to ensure the highest quality and attention to detail..",
+      "We recognize that every project is unique and tailor our services to meet your specific needs. Our skilled craftsmen combine traditional woodworking techniques with modern technology to deliver exceptional results. We use the finest materials and adhere to industry best practices to ensure the highest quality and attention to detail.We prioritize clear communication, fair pricing, and keeping you informed throughout the entire process. We are dedicated to customer satisfaction and strive to create something extraordinary for your space. Choose The Supreme Maintenance for a carpentry experience that exceeds your expectations. Contact Us Now and get a free quote.",
     points: [
       {
         icon: FaTools,
@@ -146,6 +148,12 @@ const CarpentryService = () => {
       {
         icon: FaRegClock,
         title: "On-Time Service",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
@@ -171,13 +179,16 @@ Contact us today to schedule a consultation and let us help you bring your carpe
         points={[
           "10 years Experience",
           "Licensed Company",
-          "Certified Furniture assembly experts",
+          // "Certified Furniture assembly",
           "Free Estimation",
-          "Quality Work Guaranteed",
+          "Quality Work ",
         ]}
         imageSrc="/ch2.png"
         imageAlt="Image of man having all tools in hand"
       />
+      <div>
+        <Counter services={12} experience={10} satisfiedClients={600} />
+      </div>
       <div>
         <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
           Our Top-Notch Carpentry Services In Dubai
@@ -204,6 +215,9 @@ Contact us today to schedule a consultation and let us help you bring your carpe
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

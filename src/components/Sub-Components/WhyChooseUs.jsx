@@ -3,17 +3,17 @@ const WhyChooseUs = ({ heading, subheading, points }) => {
     <div className="why-choose-us-container py-16 bg-gray-100">
       <div className="container mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-3xl font-serif font-bold text-blue-600">
+        <h2 className="text-3xl p-3 font-serif font-bold text-blue-600">
           {heading}
         </h2>
 
         {/* Subheading */}
-        <p className="mt-2 p-6 sm:text-lg font-sans md:text-lg lg:text-2xl text-gray-700">
+        <p className="mt-2 p-6 sm:text-lg p-2 font-sans md:text-lg lg:text-2xl text-gray-700">
           {subheading}
         </p>
 
         {/* List of Points */}
-        <div className="mt-6 grid grid-cols-1 p-6 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        <div className="mt-6 grid grid-cols-1 p-6 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {points.map((point, index) => (
             <div
               key={index}

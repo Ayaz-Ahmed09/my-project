@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const Washingmechine = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,28 +16,28 @@ const Washingmechine = () => {
       title: "Baring ",
       description:
         "Is your washing machine making excessive noise or vibrating excessively? Worn bearings could be the cause. We provide quick and efficient bearing replacement services.",
-      image: "/baring.jpeg",
+      image: "/barings.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Belt repair ",
       description:
         "If your washing machine drum isn’t turning, a worn or broken belt is often the cause. We offer professional belt replacement services to get your washer spinning again.",
-      image: "/Belt.jpeg",
+      image: "/belt.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Door Fixing",
       description:
         "A properly functioning washing machine door is essential for effective and leak-free washing. We offer expert inspection, repair, and replacement services for all door-related issues.",
-      image: "/wdr.jpeg",
+      image: "/door.jpg",
       callNowLink: "+971569096124",
     },
     {
       title: "Drum Fixing",
       description:
         "A damaged washing machine drum can affect washing performance and potentially damage clothes. We expertly repair and replace drums for optimal washing results.",
-      image: "/DrumRepair.jpeg",
+      image: "/drum.jpg",
       callNowLink: "+971569096124",
     },
     {
@@ -114,12 +116,18 @@ const Washingmechine = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
     <div>
       <HeroSectionDynamic
-        title="Washing Machine At Your"
+        title="Mechanic At Your"
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/wmh.png"
@@ -133,17 +141,20 @@ const Washingmechine = () => {
           "Licensed Company",
           "Certified Technicians",
           "Free Estimation",
-          "Quality Work Guaranteed",
+          "Quality Work",
           "Reasonable Cost",
         ]}
         imageSrc="/wm2.png"
         imageAlt="Image of man having all tools in hand"
       />
       <div>
+        <Counter services={7} experience={10} satisfiedClients={100} />
+      </div>
+      <div>
         <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
           Washing Machine Services
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {WashingService.map((service, index) => (
             <SubCard
               key={index}
@@ -165,6 +176,9 @@ const Washingmechine = () => {
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

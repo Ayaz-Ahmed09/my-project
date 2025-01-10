@@ -8,13 +8,15 @@ const AboutUs = ({ title, text, imageSrc, imageAlt, points = [] }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {/* Text Section */}
-        <div className="items-center  mb-1 text-center">
+        <div className="items-center mb-1 text-center">
           <p className="sm:text-lg md:text-lg md:mt-16 lg:text-xl">{text}</p>
+
           {points?.length > 0 && (
-            <ul className="list-disc mt-4 w-max mx-auto">
+            <ul className="grid grid-cols-2 gap-6 p-2 mt-4">
               {points.map((point, index) => (
-                <li className="text-left" key={index}>
-                  {point}
+                <li key={index} className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  <span>{point}</span>
                 </li>
               ))}
             </ul>

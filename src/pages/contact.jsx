@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { useEffect } from "react";
+import ContactUs from "../components/ConatctUs";
 const ContactPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,7 +16,7 @@ const ContactPage = () => {
         Contact Us
       </h2>
 
-      <p className="text-lg text-gray-600 mb-8 text-center">
+      <p className="text-lg text-gray-600 p-3 mb-8 text-center">
         We&apos;re here to assist you! Reach out to us through any of the
         methods below. Whether you prefer calling, emailing, or using WhatsApp,
         we&apos;re always happy to help.
@@ -96,14 +97,14 @@ const ContactPage = () => {
         <h3 className="text-3xl font-semibold font-serif text-center text-blue-600 mb-4">
           How Can We Help?
         </h3>
-        <p className="text-lg text-gray-600 text-center mb-8">
+        <p className="text-lg text-gray-600 p-3 text-center mb-8">
           Whether you&apos;re looking for more information about our services,
           need an emergency repair, or simply want to ask a question, we&apos;re
           always here to help. Just contact us through one of the methods above,
           and we&apos;ll be happy to assist you as quickly as possible.
         </p>
 
-        <div className="text-center">
+        <div className="text-center p-3">
           <p className="text-lg text-gray-600 mb-4">
             We specialize in a variety of maintenance services across Dubai,
             including plumbing, electrical repairs, general handyman services,
@@ -114,7 +115,9 @@ const ContactPage = () => {
             Don’t hesitate to get in touch. We are always just a phone call,
             email, or message away!
           </p>
-
+          <div>
+            <ContactUs />
+          </div>
           <a
             href="/"
             className="inline-block bg-blue-600 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300"

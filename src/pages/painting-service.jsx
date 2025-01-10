@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const PaintingService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -124,7 +126,7 @@ const PaintingService = () => {
   const whyChooseUsData = {
     heading: " Why Choose Us for Painting Services",
     subheading:
-      "At Supreme Maintenance, we understand that every painting project is unique. That’s why we offer a wide range of professional interior and exterior painting services for houses, villas, and offices to meet all your needs. Our team of skilled painters is committed to delivering top-notch painting solutions.",
+      "Our team comprises highly skilled and experienced painters with a proven track record of delivering exceptional results. We utilize premium-grade paints from reputable brands, ensuring long-lasting durability and vibrant colors.We meticulously prepare surfaces before painting, ensuring a smooth and even finish. We employ advanced painting techniques, including precise masking, careful application, and meticulous attention to detail.We offer competitive pricing without compromising on quality or service. Choose us for your painting project in Dubai and experience the difference of professional, reliable, and exceptional painting services.",
     points: [
       {
         icon: FaTools,
@@ -143,6 +145,10 @@ const PaintingService = () => {
         title: "On-Time Service",
         // description:
         // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
       },
     ],
   };
@@ -165,16 +171,19 @@ const PaintingService = () => {
           Our expert painters utilize high-quality paints and employ meticulous techniques to deliver flawless finishes. Whether you're looking for a fresh coat of paint for your living room, a vibrant exterior makeover, or intricate decorative finishes, we have the expertise to bring your vision to life.
           We prioritize customer satisfaction and ensure a smooth and hassle-free painting experience. Contact us today for a free quote and let us transform your space."
           points={[
-            "10 years Of Experience",
+            "10 years Experience",
             "Licensed Company",
-            "Certified & expert Painters",
+            "Expert Painters",
             "Free Estimation",
-            "Quality Work Guaranteed",
-            "Premium-Quality Paint",
+            "Quality Work",
+            "Premium-Quality",
           ]}
           imageSrc="/pf.png"
           imageAlt="Image of man having all tools in hand"
         />
+        <div>
+          <Counter services={12} experience={10} satisfiedClients={700} />
+        </div>
         <div>
           <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
             Our Painting Services Near You In Dubai
@@ -202,6 +211,9 @@ const PaintingService = () => {
             subheading={whyChooseUsData.subheading}
             points={whyChooseUsData.points}
           />
+        </div>
+        <div>
+          <ContactUs />
         </div>
       </div>
     </>

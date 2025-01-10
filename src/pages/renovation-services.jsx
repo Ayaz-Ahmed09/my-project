@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const RenovationService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -149,6 +151,12 @@ const RenovationService = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
@@ -163,11 +171,14 @@ const RenovationService = () => {
       <AboutUsDynamic
         title="Renovation Services In Dubai For Residential And Commercial Properties"
         text="At Supreme Renovators & Maintenance Services, we’re committed to transforming your home into a space you’ll love. With our expertise and dedication, we deliver exceptional renovation services that exceed expectations. From modernizing your kitchen to creating a serene bedroom retreat, our team of skilled professionals is ready to bring your vision to life.We use the latest techniques and high-quality materials to ensure long-lasting results. Our attention to detail and commitment to customer satisfaction set us apart. Whether you’re looking for a complete home renovation or a simple room, kitchen, and bathroom remodeling, we’re here to help."
-        points={["Trusted Team", "Reliable Work", "Experience Team"]}
+        // points={["Trusted Team", "Reliable Work", "Experience Team"]}
         imageSrc="/reno2.png"
         imageAlt="Image of man having all tools in hand"
       />
       <div>
+        <div>
+          <Counter services={12} experience={10} satisfiedClients={400} />
+        </div>
         <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
           Renovation Services
         </h2>
@@ -193,6 +204,9 @@ const RenovationService = () => {
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

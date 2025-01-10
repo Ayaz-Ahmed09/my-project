@@ -2,9 +2,11 @@ import HeroSectionDynamic from "../components/Sub-Components/HeroSectionDynamic"
 import AboutUsDynamic from "../components/Sub-Components/AboutUsDynamic";
 import SubCard from "../components/Re-useable/SubCard";
 import TestimonialDynamic from "../components/Sub-Components/TestimonialDynamic";
-import { FaTools, FaShieldAlt, FaRegClock } from "react-icons/fa";
+import { FaTools, FaShieldAlt, FaRegClock, FaPhoneAlt } from "react-icons/fa";
 import WhyChooseUs from "../components/Sub-Components/WhyChooseUs";
 import { useEffect } from "react";
+import Counter from "../components/Re-useable/Counter";
+import ContactUs from "../components/ConatctUs";
 const ElectricalService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -121,6 +123,12 @@ const ElectricalService = () => {
         // description:
         // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
+      {
+        icon: FaPhoneAlt,
+        title: "24 Hours Services",
+        // description:
+        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
+      },
     ],
   };
   return (
@@ -142,7 +150,7 @@ Whether you need to install new lighting fixtures, repair faulty wiring, upgrade
 
 We prioritize customer satisfaction and ensure that all our work is carried out to the highest industry standards. Contact us today for a free quote and experience the difference with our professional and reliable electrical services near you in Dubai."
         points={[
-          "Cost-Effective Electrician Service close to you",
+          "Cost-Effective ",
           "10 years Experience",
           "Licensed Company",
           "Certified Technicians",
@@ -152,6 +160,9 @@ We prioritize customer satisfaction and ensure that all our work is carried out 
         imageSrc="/ele.png"
         imageAlt="Image of man having all tools in hand"
       />
+      <div>
+        <Counter services={8} experience={10} satisfiedClients={900} />
+      </div>
       <div>
         <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
           Our Electrician Services
@@ -178,6 +189,9 @@ We prioritize customer satisfaction and ensure that all our work is carried out 
           subheading={whyChooseUsData.subheading}
           points={whyChooseUsData.points}
         />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );
