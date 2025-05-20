@@ -71,6 +71,7 @@ const HandymanService = () => {
         " Hire our experts to get the Furniture Assembly Service to put together the furniture pieces that will save you time and hassle promptly.",
       image: "/ff.jpg",
       callNowLink: "+971569096124",
+      link: "/carpentry-service",
     },
     {
       title: "Installing Curtains & Binds",
@@ -163,8 +164,8 @@ const HandymanService = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="Handyman"
-        subtitle="Services"
+        title="Small Tasks "
+        subtitle="Big Impacts"
         backgroundImage="/new.jpeg"
         image="/hand.png"
         buttonText="Call Now"
@@ -173,8 +174,8 @@ const HandymanService = () => {
         <AboutUsDynamic
           title=" Best Handyman Services Near You In Dubai"
           text="Looking for a reliable handyman service near you in Dubai? Look no further than Supreme Maintenance. We are your trusted experts in providing exceptional home maintenance solutions tailored to meet your unique needs. Whether you’re dealing with a leaky faucet, need furniture assembly, TV mounting, shelf fixing, picture hanging, or curtain installation, our skilled handymen are here to help."
-          imageSrc="/handyman2.png"
-          imageAlt="Image of man having all tools in hand"
+          imageSrc="/handyman services near you.png"
+          imageAlt="handyman services near you in dubai"
           points={[
             "10 Years Experience",
             "Licensed Company",
@@ -206,9 +207,9 @@ const HandymanService = () => {
         </div>
       </div>
       <div>{/* <DynamicCounter countersData={counterData} /> */}</div>
-      <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
-        Our Testimonials About Handyman Services
-      </h2>
+      <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+        Our Testimonials
+      </h3>
       <TestimonialDynamic testimonialData={HandymanTestimonials} />
       <div>
         <WhyChooseUs

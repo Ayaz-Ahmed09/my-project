@@ -9,7 +9,8 @@ const HeroSection = () => {
         <div>
           <img
             src="/HomeBP.png"
-            alt="Handyman Services"
+            alt="house and building maintenance services near you
+"
             loading="eager"
             className="w-full h-auto object-cover md:h-[500px] md:w-auto"
           />
@@ -18,22 +19,22 @@ const HeroSection = () => {
 
       {/* Text Section */}
       <div className="text-center lg:text-left lg:w-1/2">
-        <h1 className="text-4xl sm:text-sm md:text-4xl lg:text-5xl font-bold font-serif text-black">
-          Maintenance
-          <span className="hero-text text-4xl sm:text-lg md:text-4xl lg:text-5xl font-bold">
+        <p className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold font-serif text-black">
+          Your Property Deserves
+          <span className="hero-text text-center  sm:text-lg md:text-4xl lg:text-5xl font-bold">
             {" "}
             {/* Wrap each character of "Services" in a span */}
-            <span className="strokeme">s</span>
+            <span className="strokeme">B</span>
             <span className="strokeme">e</span>
-            <span className="strokeme">r</span>
-            <span className="strokeme">v</span>
-            <span className="strokeme">i</span>
+            <span className="strokeme">s</span>
+            <span className="strokeme">t</span>
+            {/* <span className="strokeme">i</span>
             <span className="strokeme">c</span>
             <span className="strokeme">e</span>
-            <span className="strokeme">s</span>
+            <span className="strokeme">s</span> */}
           </span>
-        </h1>
-        <div className="mt-6 lg:mr-[380px]">
+        </p>
+        <div className="mt-6 lg:mr-[380px] md:mr-0">
           <Button name="Call Now" />
         </div>
       </div>

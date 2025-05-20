@@ -43,9 +43,9 @@ function App() {
         Our Maintenance Services
       </h2>
       <Services />
-      <h2 className="text-center text-3xl font-bold font-serif text-blue-500 mt-6">
+      <h3 className="text-center text-3xl font-bold font-serif text-blue-500 mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <Testimonial />
       <WhyChooseUs />
       <ContactUs />

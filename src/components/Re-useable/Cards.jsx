@@ -18,7 +18,7 @@ const Cards = ({ title, description, viewDetailLink, image, callNowLink }) => {
 
       {/* Content Section */}
       <div className="flex flex-col justify-between w-full lg:w-2/3">
-        <h2 className="text-xl font-bold font-serif mb-2">{title}</h2>
+        <p className="text-xl font-bold font-serif mb-2">{title}</p>
         <p className="text-gray-700 mb-4">{description}</p>
 
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">

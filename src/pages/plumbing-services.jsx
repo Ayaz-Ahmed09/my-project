@@ -55,6 +55,7 @@ const PlumbingService = () => {
       // link: "/plumbing-services/water-heater",
       image: "/waterH.jpeg",
       callNowLink: "+971569096124",
+      viewDetailsLink: "/plumbing-services/water-heater",
     },
   ];
   const PlumberTestimonials = [
@@ -100,28 +101,22 @@ const PlumbingService = () => {
       {
         icon: FaShieldAlt,
         title: "Trustworthy & Reliable",
-        // description:
-        // "We pride ourselves on building trust with our customers. Our team is background-checked and fully insured.",
       },
       {
         icon: FaRegClock,
         title: "On-Time Service",
-        // description:
-        // "We value your time. Our Plumber arrive on time and complete the job efficiently and within the estimated time frame.",
       },
       {
         icon: FaPhoneAlt,
         title: "24 Hours Services",
-        // description:
-        // "We value your time. Our handymen arrive on time and complete the job efficiently and within the estimated time frame.",
       },
     ],
   };
   return (
     <div>
       <HeroSectionDynamic
-        title="Plumber At Your"
-        subtitle=" Services"
+        title="Stop the Water Leaks"
+        subtitle="Forever"
         backgroundImage="/new.jpeg"
         image="/phb.png"
         buttonText="Call Now"
@@ -141,8 +136,8 @@ Choose The Supreme Maintenance for dependable, professional, and efficient plumb
             "Quality Work Guaranteed",
             "Affordable Cost",
           ]}
-          imageSrc="/p2.png"
-          imageAlt="Image of man having all tools in hand"
+          imageSrc="/plumber services near you.jpg"
+          imageAlt="plumber services near you"
         />
       </div>
       <div>
@@ -165,9 +160,9 @@ Choose The Supreme Maintenance for dependable, professional, and efficient plumb
           ))}
         </div>
       </div>
-      <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
+      <h3 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
         Our Client Testimonial
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={PlumberTestimonials} />
       <div>
         <WhyChooseUs

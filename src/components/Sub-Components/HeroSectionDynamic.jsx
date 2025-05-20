@@ -26,13 +26,13 @@ const HeroSectionDynamic = ({
 
       {/* Text Section */}
       <div className="text-center lg:text-left lg:w-1/2 mt-8 lg:mt-0">
-        <h2 className="text-4xl sm:text-sm md:text-4xl lg:text-5xl font-serif font-bold text-black">
+        <p className="text-2xl lg:ml-14 sm:text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-black">
           {title} {/* Dynamic Title */}
-          <span className="text-blue-500 text-4xl sm:text-sm md:text-4xl lg:text-5xl font-bold">
+          <span className="text-blue-500  sm:text-2xl md:text-4xl lg:text-5xl font-bold">
             {subtitle} {/* Dynamic Subtitle */}
           </span>
-        </h2>
-        <div className="mt-6 lg:mr-[380px]">
+        </p>
+        <div className="mt-6 lg:mr-[380px] lg:ml-[100px]">
           <Button name={buttonText} />
         </div>
       </div>

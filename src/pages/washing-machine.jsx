@@ -127,8 +127,8 @@ const Washingmechine = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="Mechanic At Your"
-        subtitle="Services"
+        title="Washing Machine"
+        subtitle="Repairing"
         backgroundImage="/new.jpeg"
         image="/wmh.png"
         buttonText="Call Now"
@@ -144,8 +144,8 @@ const Washingmechine = () => {
           "Quality Work",
           "Reasonable Cost",
         ]}
-        imageSrc="/wm2.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/washing machine repairing services near you.jpg"
+        imageAlt="washing machine repairing services near you"
       />
       <div>
         <Counter services={7} experience={10} satisfiedClients={100} />
@@ -166,9 +166,9 @@ const Washingmechine = () => {
           ))}
         </div>
       </div>
-      <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+      <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={WashingTestimonials} />
       <div>
         <WhyChooseUs

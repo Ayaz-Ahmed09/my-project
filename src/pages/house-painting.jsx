@@ -131,8 +131,8 @@ const HousePainting = () => {
       <title> Professional Home Painting Service In Dubai</title>
       <div>
         <HeroSectionDynamic
-          title="HousePainter At Your"
-          subtitle="Services"
+          title="  Your Home's  "
+          subtitle="Color Story"
           backgroundImage="/new.jpeg"
           image="/painter.png"
           buttonText="Call Now"
@@ -152,8 +152,8 @@ const HousePainting = () => {
             "Quality Work",
             "Premium-Quality",
           ]}
-          imageSrc="/pf.png"
-          imageAlt="Image of man having all tools in hand"
+          imageSrc="/house paint services near you.jpg"
+          imageAlt="house paint services near you"
         />
         <div>
           <Counter services={8} experience={10} satisfiedClients={400} />
@@ -175,9 +175,9 @@ const HousePainting = () => {
             ))}
           </div>
         </div>
-        <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
+        <h3 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
           Our Client Testimonial
-        </h2>
+        </h3>
         <TestimonialDynamic testimonialData={PaintingTestimonials} />
         <div>
           <WhyChooseUs

@@ -120,8 +120,8 @@ const FridgeRepair = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="Mechanic At Your"
-        subtitle="Services"
+        title="Refrigerator"
+        subtitle="Repairing"
         backgroundImage="/new.jpeg"
         image="/fridge1.png"
         buttonText="Call Now"
@@ -138,8 +138,8 @@ const FridgeRepair = () => {
           "Quality Work ",
           "Reasonable Cost",
         ]}
-        imageSrc="/fridge2.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/refrigerator repairing services near you.png"
+        imageAlt="refrigerator repairing services near you"
       />
       <div>
         <Counter services={6} experience={10} satisfiedClients={250} />
@@ -160,9 +160,9 @@ const FridgeRepair = () => {
           ))}
         </div>
       </div>
-      <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+      <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
         Our Testimonials
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={FridgeTestimonials} />
       <div>
         <WhyChooseUs

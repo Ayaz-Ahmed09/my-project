@@ -129,8 +129,8 @@ const VillaPainting = () => {
       <title>Top-Notch Villa Paiting Service In Dubai</title>
       <div>
         <HeroSectionDynamic
-          title="Painter At Your"
-          subtitle="Services"
+          title=" Art of Coloring Your "
+          subtitle="Villa"
           backgroundImage="/new.jpeg"
           image="/painter.png"
           buttonText="Call Now"
@@ -142,8 +142,8 @@ const VillaPainting = () => {
 We understand that painting a villa has its own challenges. That's why we offer custom solutions to fit your exact needs. Whether you want intricate details or bold colors, we'll bring your vision to life with skill and attention to detail.
 
 Experience the difference of our top-notch villa painting services and create a stunning home that truly reflects your style."
-          imageSrc="/pf.png"
-          imageAlt="Image of man having all tools in hand"
+          imageSrc="/villa painting services near you.jpg"
+          imageAlt="villa painting services near you"
         />
         <div>
           <Counter services={8} experience={10} satisfiedClients={800} />
@@ -165,9 +165,9 @@ Experience the difference of our top-notch villa painting services and create a 
             ))}
           </div>
         </div>
-        <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
+        <h3 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
           Our Client Testimonial
-        </h2>
+        </h3>
         <TestimonialDynamic testimonialData={PaintingTestimonials} />
         <div>
           <WhyChooseUs

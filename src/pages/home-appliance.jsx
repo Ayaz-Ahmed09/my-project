@@ -104,8 +104,8 @@ const HomeAppliance = () => {
       <title> Best Home Appliances Repairing Service In Dubai</title>
       <div>
         <HeroSectionDynamic
-          title="Home Appliance"
-          subtitle="Services"
+          title=" Home Appliance "
+          subtitle="Repairing"
           backgroundImage="/new.jpeg"
           image="/h1.png"
           buttonText="Call Now"
@@ -114,8 +114,8 @@ const HomeAppliance = () => {
           title="Cost-Effective Home Appliance Repairing Service In Dubai"
           text="With years of experience and a commitment to customer satisfaction, we are the trusted choice for home appliance repairs in Dubai. Our team of expert technicians possesses in-depth knowledge of various appliance brands and models, enabling them to accurately diagnose and resolve a wide range of issues. We utilize the latest tools and techniques to ensure efficient and effective repairs, backed by a guarantee of quality workmanship."
           // points={["10 years of experience", "Trusted Team"]}
-          imageSrc="/h2.png"
-          imageAlt="Image of man having all tools in hand"
+          imageSrc="/home appliances repair services near you.jpg"
+          imageAlt="home appliances repair services near you"
         />
         <div>
           <Counter services={4} experience={10} satisfiedClients={500} />
@@ -137,9 +137,9 @@ const HomeAppliance = () => {
             ))}
           </div>
         </div>
-        <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+        <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
           Our Client Testimonials
-        </h2>
+        </h3>
         <TestimonialDynamic testimonialData={HomeTestimonials} />
         <div>
           <WhyChooseUs

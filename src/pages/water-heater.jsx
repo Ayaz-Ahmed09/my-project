@@ -135,7 +135,7 @@ const WaterHeater = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="WaterHeater At Your"
+        title="Water Heater"
         subtitle="Services"
         backgroundImage="/new.jpeg"
         image="/H1.png"
@@ -145,8 +145,8 @@ const WaterHeater = () => {
         title="Best Water Heater Repairing And Installation Service In Dubai"
         text="Experience the comfort of reliable hot water with our professional water heater installation and repair services in Dubai. Whether you need a new water heater installed, or your existing unit requires repair, our expert technicians have the skills and experience to handle it all. We specialize in installing and repairing all types of water heaters, including electric, gas, and tankless models.
         Our services include installation, repair, maintenance, and replacement, ensuring your water heater operates efficiently and safely. We prioritize customer satisfaction and offer competitive pricing, making us your trusted partner for all your water heater needs in Dubai."
-        imageSrc="/H2.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/water heater repairing services near you.jpg"
+        imageAlt="water heater repairing services near you"
       />
       <div>
         <Counter services={8} experience={10} satisfiedClients={300} />
@@ -167,9 +167,9 @@ const WaterHeater = () => {
           ))}
         </div>
       </div>
-      <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+      <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={waterTestimonials} />
       <div>
         <WhyChooseUs
