@@ -66,7 +66,7 @@ const ContactUs = () => {
           <div className="bg-white p-6 rounded-lg hover:border-2 border-blue-500 shadow-lg flex items-start gap-4">
             <FaCommentDots className="text-blue-500 text-3xl" />
             <div className="font-serif">
-              <h3 className="font-bold text-lg">Contact Us Now</h3>
+              <p className="font-bold text-lg">Contact Us Now</p>
               <p className="text-gray-600">
                 Our staff would love to hear from you
               </p>
@@ -77,7 +77,7 @@ const ContactUs = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg hover:border-2 border-blue-500 flex items-start gap-4">
             <FaMapMarkerAlt className="text-blue-500 text-3xl" />
             <div className="font-serif">
-              <h3 className="font-bold text-lg">Company Address</h3>
+              <p className="font-bold text-lg">Company Address</p>
               <p className="text-gray-600">
                 WHP2-Block-A Commercial, Dubai, UAE
               </p>
@@ -88,7 +88,7 @@ const ContactUs = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg hover:border-2 border-blue-500 flex items-start gap-4">
             <FaPhoneAlt className="text-blue-500 text-3xl" />
             <div className="font-serif">
-              <h3 className="font-bold text-lg">Call Us Now</h3>
+              <p className="font-bold text-lg">Call Us Now</p>
               <p className="text-gray-600">+971-569096124</p>
             </div>
           </div>
@@ -99,7 +99,7 @@ const ContactUs = () => {
               {/* Hide the Gmail icon on smaller screens using `hidden md:block` */}
               <FaEnvelope className="text-blue-500 text-2xl " />
               <div className="font-serif">
-                <h3 className="font-bold text-lg">Email Us</h3>
+                <p className="font-bold text-lg">Email Us</p>
                 <p className="text-gray-600 text-lg">
                   thesuprememaintenance
                   <span> @gmail.com</span>
@@ -111,9 +111,9 @@ const ContactUs = () => {
 
         {/* Contact Form Section */}
         <div className="w-full md:w-2/3 bg-white p-6 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold font-serif text-center mb-6">
+          <p className="text-3xl font-bold font-serif text-center mb-6">
             Contact Us
-          </h2>
+          </p>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label

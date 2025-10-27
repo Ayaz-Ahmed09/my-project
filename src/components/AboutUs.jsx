@@ -19,7 +19,7 @@ const AboutUs = () => {
         {/* Image Section (Now on the right) */}
         <div className="flex justify-center items-center bg-[url('/1.png')] bg-cover bg-center">
           <img
-            src="/Home2.png"
+            src="/house and building maintenance services near you.png"
             alt="Image of man having all tools in hand"
             loading="eager"
             className="w-full h-auto md:h-[500px] md:w-auto object-contain"

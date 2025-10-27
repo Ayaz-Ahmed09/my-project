@@ -162,8 +162,8 @@ const CarpentryService = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="Carpenter At Your"
-        subtitle="Services"
+        title="The Wood"
+        subtitle="working Art"
         backgroundImage="/new.jpeg"
         image="/ch.png"
         buttonText="Call Now"
@@ -171,11 +171,11 @@ const CarpentryService = () => {
       <AboutUsDynamic
         title=" Professional Carpenter Services Near You In Dubai"
         text="Searching for a skilled carpenter near you in Dubai? Look no further than Supreme Maintenance. We are your trusted local experts for all your carpentry needs. Whether you're looking to add a touch of elegance with custom-built furniture, need to repair or install kitchen cabinets, require expert wardrobe installation or repair services, or desire the warmth and beauty of wood flooring, we have you covered.
-Professional Carpentry Service In Dubai
+        Professional Carpentry Service In Dubai
 
-Our team of experienced carpenters possesses the skills and expertise to handle a wide range of carpentry projects, from simple repairs and installations to complex custom designs.
+         Our team of experienced carpenters possesses the skills and expertise to handle a wide range of carpentry projects, from simple repairs and installations to complex custom designs.
 
-Contact us today to schedule a consultation and let us help you bring your carpentry visions to life."
+        Contact us today to schedule a consultation and let us help you bring your carpentry visions to life."
         points={[
           "10 years Experience",
           "Licensed Company",
@@ -183,8 +183,8 @@ Contact us today to schedule a consultation and let us help you bring your carpe
           "Free Estimation",
           "Quality Work ",
         ]}
-        imageSrc="/ch2.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/carpenter services near you.jpg"
+        imageAlt="carpenter services near you"
       />
       <div>
         <Counter services={12} experience={10} satisfiedClients={600} />
@@ -205,9 +205,9 @@ Contact us today to schedule a consultation and let us help you bring your carpe
           ))}
         </div>
       </div>
-      <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
+      <h3 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={CarTestimonials} />
       <div>
         <WhyChooseUs

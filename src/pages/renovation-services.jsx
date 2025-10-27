@@ -162,8 +162,8 @@ const RenovationService = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="Renovation"
-        subtitle="Services"
+        title="Your Renovation"
+        subtitle=" Specialists"
         backgroundImage="/new.jpeg"
         image="/reno.png"
         buttonText="Call Now"
@@ -172,8 +172,8 @@ const RenovationService = () => {
         title="Renovation Services In Dubai For Residential And Commercial Properties"
         text="At Supreme Renovators & Maintenance Services, we’re committed to transforming your home into a space you’ll love. With our expertise and dedication, we deliver exceptional renovation services that exceed expectations. From modernizing your kitchen to creating a serene bedroom retreat, our team of skilled professionals is ready to bring your vision to life.We use the latest techniques and high-quality materials to ensure long-lasting results. Our attention to detail and commitment to customer satisfaction set us apart. Whether you’re looking for a complete home renovation or a simple room, kitchen, and bathroom remodeling, we’re here to help."
         // points={["Trusted Team", "Reliable Work", "Experience Team"]}
-        imageSrc="/reno2.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/renovation services near you.jpg"
+        imageAlt="renovation services near you"
       />
       <div>
         <div>
@@ -194,9 +194,9 @@ const RenovationService = () => {
           ))}
         </div>
       </div>
-      <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+      <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={RenoTestimonials} />
       <div>
         <WhyChooseUs

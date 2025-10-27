@@ -167,8 +167,8 @@ const Dishwasher = () => {
             Our technicians are skilled and knowledgeable, and we use high-quality parts to ensure long-lasting repairs. We also offer competitive pricing and a satisfaction guarantee.
 
             Contact us today for a free quote. We'll answer any questions you have and schedule a convenient time for us to come and take a look at your dishwasher."
-            imageSrc="/dish2.png"
-            imageAlt="Image of man having all tools in hand"
+            imageSrc="/dishwasher repairing services near you.jpg"
+            imageAlt="dishWasher repairing services near you"
           />
         </div>
         <div>
@@ -190,9 +190,9 @@ const Dishwasher = () => {
             ))}
           </div>
         </div>
-        <h2 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
+        <h3 className="text-center font-serif text-blue-500 text-3xl font-bold mt-6">
           Our Client Testimonials
-        </h2>
+        </h3>
         <TestimonialDynamic testimonialData={DishTestimonials} />
         <div>
           <WhyChooseUs

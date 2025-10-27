@@ -6,6 +6,7 @@ import ContactUs from "./components/ConatctUs";
 import CounterBanner from "./components/CounterBanner";
 import Testimonial from "./components/Testimonial";
 import WhyChooseUs from "./components/WhyChooseUs";
+import "./index.css";
 function App() {
   // const reviews = [
   //   {
@@ -43,9 +44,9 @@ function App() {
         Our Maintenance Services
       </h2>
       <Services />
-      <h2 className="text-center text-3xl font-bold font-serif text-blue-500 mt-6">
+      <h3 className="text-center text-3xl font-bold font-serif text-blue-500 mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <Testimonial />
       <WhyChooseUs />
       <ContactUs />

@@ -110,16 +110,16 @@ const PestControl = () => {
         title="Best Pest Control Services Near You In Dubai"
         text="Experience peace of mind with our professional pest control services in Dubai. We effectively eliminate a wide range of pests, including cockroaches, ants, termites, bed bugs, rodents, and more. Our expert technicians utilize safe and effective methods, including eco-friendly and non-toxic options, to ensure the safety of your family and pets.We conduct thorough inspections to identify the root cause of the infestation and implement customized treatment plans to effectively eliminate the problem and prevent future occurrences. With our commitment to customer satisfaction and a focus on providing long-term pest control solutions, you can trust us to keep your home or business pest-free and protect your valuable assets."
         // points={["Professional Team", "Effective Solutions"]}
-        imageSrc="/ph2.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/pest control services near you.jpg"
+        imageAlt="pest control services near you"
       />
       <div>
         <Counter services={4} experience={10} satisfiedClients={200} />
       </div>
       <div>
-        <h2 className="text-center text-blue-500 font-serif text-3xl font-bold mt-6">
+        <h3 className="text-center text-blue-500 font-serif text-3xl font-bold mt-6">
           Our Pest Control Services
-        </h2>
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {PestService.map((service, index) => (
             <SubCard

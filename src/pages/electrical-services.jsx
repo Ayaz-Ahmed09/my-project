@@ -134,8 +134,8 @@ const ElectricalService = () => {
   return (
     <div>
       <HeroSectionDynamic
-        title="Electrician At Your"
-        subtitle="Services"
+        title="Lighting Up  "
+        subtitle="Your Life"
         backgroundImage="/new.jpeg"
         image="/electrician 2.png"
         buttonText="Call Now"
@@ -157,8 +157,8 @@ We prioritize customer satisfaction and ensure that all our work is carried out 
           "Free Estimation",
           "Quality Work Guaranteed",
         ]}
-        imageSrc="/ele.png"
-        imageAlt="Image of man having all tools in hand"
+        imageSrc="/electrician services near you.jpg"
+        imageAlt="electrician services near you"
       />
       <div>
         <Counter services={8} experience={10} satisfiedClients={900} />
@@ -179,9 +179,9 @@ We prioritize customer satisfaction and ensure that all our work is carried out 
           ))}
         </div>
       </div>
-      <h2 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
+      <h3 className="text-center text-3xl font-serif text-blue-500 font-bold mt-6">
         Our Client Testimonials
-      </h2>
+      </h3>
       <TestimonialDynamic testimonialData={electricalTestimonials} />
       <div>
         <WhyChooseUs

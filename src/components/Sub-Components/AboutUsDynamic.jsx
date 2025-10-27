@@ -12,7 +12,7 @@ const AboutUs = ({ title, text, imageSrc, imageAlt, points = [] }) => {
           <p className="sm:text-lg md:text-lg md:mt-16 lg:text-xl">{text}</p>
 
           {points?.length > 0 && (
-            <ul className="grid grid-cols-2 gap-6 p-2 mt-4">
+            <ul className="grid grid-cols-2 gap-6 p-1 mt-4">
               {points.map((point, index) => (
                 <li key={index} className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
@@ -24,7 +24,7 @@ const AboutUs = ({ title, text, imageSrc, imageAlt, points = [] }) => {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center items-center bg-[url('/1.png')] bg-cover bg-center">
+        <div className="flex justify-center items-center ">
           <img
             src={imageSrc}
             alt={imageAlt}
