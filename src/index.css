@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-raleway: "Raleway", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+.raleway {
+  font-family: var(--font-raleway);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-raleway);
+}
+
+/* Fade-in animation for elements on scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax effect for background images */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  font-family: var(--font-poppins);
+}

@@ -6,6 +6,7 @@ import ContactUs from "./components/ConatctUs";
 import CounterBanner from "./components/CounterBanner";
 import Testimonial from "./components/Testimonial";
 import WhyChooseUs from "./components/WhyChooseUs";
+import "./index.css";
 function App() {
   // const reviews = [
   //   {
